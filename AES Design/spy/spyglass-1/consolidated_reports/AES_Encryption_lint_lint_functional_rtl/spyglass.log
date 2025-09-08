@@ -1,0 +1,1655 @@
+SpyGlass run started at 07:32:23 AM on Sep 08 2025 
+
+SpyGlass Predictive Analyzer(R) - Version SpyGlass_vL-2016.06
+Last compiled on May 20 2016
+
+All Rights Reserved. Use, disclosure or duplication
+without prior written permission of Synopsys Inc. is prohibited.
+Technical support: email spyglass_support@synopsys.com.
+
+
+Running SpyGlass 64-bit Executable: /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/obj/check.Linux4
+
+RULE-CHECKING IN MIXED MODE
+Loading Policy: spyglass (Version: SpyGlass_vL-2016.06) from path: /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/spyglass
+Loading Shared library libspyglassrules-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libspyglassrules-Linux4.spyso 
+Loading Shared library libsdcInitRules-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libsdcInitRules-Linux4.spyso 
+Loading Shared library librmerules-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/lib/librmerules-Linux4.spyso 
+Loading perl file for 'auto-verify' policy from path: /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/auto-verify/auto-verify-policy.pl
+Loading Shared library libformalRules-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/auto-verify/libformalRules-Linux4.spyso 
+Version of Policy 'auto-verify': SpyGlass_vL-2016.06
+Loading Shared library libVeStarc-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/starc/libVeStarc-Linux4.spyso 
+Loading Shared library libVeLint-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libVeLint-Linux4.spyso 
+Loading Shared library libCoreRules-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libCoreRules-Linux4.spyso 
+Loading Shared library libVeMoreLint-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/morelint/libVeMoreLint-Linux4.spyso 
+Loading Shared library libVhMoreLint-Linux4.spyso from /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/policies/morelint/libVhMoreLint-Linux4.spyso 
+
+INFO [326]    SpyGlass Design Database './spyglass-1/AES_Encryption/.SG_SaveRestoreDB' can not be restored because:
+              Saved design is either incomplete or corrupted. Design restore failed.              Saving Database again
+Enabling Following Rules Only For Save:
+ GenTopLevelBlocksForAutoSoc
+Total Rules Enabled Only For Save : 1
+##build_id : SpyGlass_vL-2016.06
+##system   : Linux IC_EDA 3.10.0-1160.6.1.el7.x86_64 #1 SMP Tue Nov 17 13:59:11 UTC 2020 x86_64
+##cwd      : /home/ICer/AES_Project/spy
+##lang     : Verilog+VHDL
+##args     : -mSpyGlass::Compatibility::v2_7_3 \
+             -mSpyGlass::Compatibility::v2_7_3 \
+             -mSpyGlass::Compatibility::v2_7_3 \
+             -top 'AES_Encryption' \
+             -lib accellera_vlog /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/auxi/ovl/precompile/Linux4/accellera_verilog \
+             -lib accellera /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/auxi/ovl/precompile/Linux4/accellera_vhdl \
+             -lib WORK ./spyglass-1/AES_Encryption/WORK \
+             -lib accellera_vlog /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/auxi/ovl/precompile/Linux4/accellera_verilog \
+             -lib accellera /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/auxi/ovl/precompile/Linux4/accellera_vhdl \
+             -nl \
+             -policy='auto-verify' \
+             -mixed \
+             -batch \
+             -rules='Av_Info_Case_Analysis,Av_width_mismatch_assign,Av_width_mismatch_case,Av_width_mismatch_port,Av_width_mismatch_function,Av_signed_unsigned_mismatch,Av_width_mismatch_expr,Av_case_default_missing,Av_width_mismatch_expr03,Av_width_mismatch_expr02,Av_dontcare_mismatch,Av_case_default_redundant' \
+             -adc './spyglass-1/spyglass-1_adc_file.adc' \
+             -wdir './spyglass-1/AES_Encryption/lint/lint_functional_rtl' \
+             -enableSV \
+             -sgdc '/home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/auxi/policy_data/auto-verify/verif.sgdc' \
+             -sgdc '/home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/auxi/policy_data/auto-verify/verif.sgdc' \
+             -dbdir './spyglass-1/AES_Encryption/.SG_SaveRestoreDB' \
+             -templatedir '/home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff' \
+             --goal_info 'lint/lint_functional_rtl@' \
+             --template_info 'lint/lint_functional_rtl' \
+             -projectwdir './spyglass-1' \
+             -enable_save_restore \
+             -enable_save_restore_builtin 'true' \
+             -nocheckoverflow=yes \
+             -64bit  \
+             ../AES_Encryption.v \
+             ../DFF_128.v \
+             ../Sbox.v \
+             ../roundkey.v \
+             ../mixcolumns.v \
+             ../KeyExpansion.v \
+             ../subbytes.v \
+             ../shiftrows.v
+
+##verbosity level   : 2
+##exact cmdline arg : -batch -project spyglass-1.prj -goal lint/lint_functional_rtl -64bit
+##spyglass_run.csh begins :
+;	cd /home/ICer/AES_Project/spy
+;	setenv SPYGLASS_LD_PRELOAD /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/lib/libsgjemalloc-Linux4.so
+;	setenv SPYGLASS_DW_PATH /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/dw_support
+;	/home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/bin/spyglass  -batch -project spyglass-1.prj -goal lint/lint_functional_rtl -64bit
+##spyglass_run.csh ends
+##files    : ../AES_Encryption.v \
+             ../DFF_128.v \
+             ../Sbox.v \
+             ../roundkey.v \
+             ../mixcolumns.v \
+             ../KeyExpansion.v \
+             ../subbytes.v \
+             ../shiftrows.v
+
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01_en.txt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "w" mode ...
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01_en.txt' in "r" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01_en.txt' closed.
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02_en.txt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "w" mode ...
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02_en.txt' in "r" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02_en.txt' closed.
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03_en.txt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "w" mode ...
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03_en.txt' in "r" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03_en.txt' closed.
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04_en.txt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "w" mode ...
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04_en.txt' in "r" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04_en.txt' closed.
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05_en.txt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "w" mode ...
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05_en.txt' in "r" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05_en.txt' closed.
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05_en.txt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "w" mode ...
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05_en.txt' in "r" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05_en.txt' closed.
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06_en.txt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "w" mode ...
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06_en.txt' in "r" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06_en.txt' closed.
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07_en.txt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "w" mode ...
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07_en.txt' in "r" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07_en.txt' closed.
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01_en.txt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01_en.txt' in "r" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01_en.txt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01_en.txt' in "r" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02_en.txt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02_en.txt' closed.
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "w" mode ...
+##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02_en.txt' in "r" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02_en.txt' closed.
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ Reading sgdc file "/home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/auxi/policy_data/auto-verify/verif.sgdc" ...
+Performing unification checks on SGDC... done
+
+INFO [76]    Using `./spyglass-1/AES_Encryption/WORK/64' as the Work Directory for 64bit precompiled dump.
+Checking Rule PrecompileLibCheck01 (Rule 1 of total 187) .... done (Time = 0.00s, Memory = 0.4K)
+Checking Rule PrecompileLibCheck02 (Rule 2 of total 187) .... done (Time = 0.00s, Memory = 19.5K)
+Checking Rule PrecompileLibCheck03 (Rule 3 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule PrecompileLibCheck04 (Rule 4 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_assume_path01 (Rule 5 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+Checking Rule SGDC_sdcschema02 (Rule 6 of total 187) .... done (Time = 0.01s, Memory = -0.2K)
+Checking Rule SGDC_clock05 (Rule 7 of total 187) .... done (Time = 0.00s, Memory = -5.5K)
+Checking Rule SGDC_clock09 (Rule 8 of total 187) .... done (Time = 0.00s, Memory = 8.0K)
+Checking Rule SGDC_force_ta05 (Rule 9 of total 187) .... done (Time = 0.00s, Memory = 0.6K)
+Checking Rule SGDC_require_path03 (Rule 10 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_require_value03 (Rule 11 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_voltagedomain05 (Rule 12 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_voltagedomain06 (Rule 13 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_voltagedomain07 (Rule 14 of total 187) .... done (Time = 0.00s, Memory = 15.0K)
+Checking Rule SGDC_powerdomainoutputs02 (Rule 15 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_supply01 (Rule 16 of total 187) .... done (Time = 0.00s, Memory = 16.0K)
+Checking Rule SGDC_waive01 (Rule 17 of total 187) .... done (Time = 0.00s, Memory = -21.0K)
+Checking Rule SGDC_waive02 (Rule 18 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive03 (Rule 19 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive04 (Rule 20 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive05 (Rule 21 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive06 (Rule 22 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive07 (Rule 23 of total 187) .... done (Time = 0.00s, Memory = -2.5K)
+Checking Rule SGDC_waive08 (Rule 24 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive09 (Rule 25 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive10 (Rule 26 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive11 (Rule 27 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive12 (Rule 28 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive13 (Rule 29 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive21 (Rule 30 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive22 (Rule 31 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive30 (Rule 32 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive32 (Rule 33 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive33 (Rule 34 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive36 (Rule 35 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive38 (Rule 36 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_fifo01 (Rule 37 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_libgroup01 (Rule 38 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_libgroup02 (Rule 39 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_libgroup04 (Rule 40 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_power_data01 (Rule 41 of total 187) .... done (Time = 0.00s, Memory = 15.0K)
+Checking Rule SGDC_ungroup01 (Rule 42 of total 187) .... done (Time = 0.00s, Memory = -0.3K)
+Checking Rule SGDC_abstract_port06 (Rule 43 of total 187) .... done (Time = 0.00s, Memory = 15.0K)
+Checking Rule SGDC_abstract_port14 (Rule 44 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_abstract_port15 (Rule 45 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_abstract_port18 (Rule 46 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule sdc_init_rule (Rule 47 of total 187) .... done (Time = 0.00s, Memory = 3.8K)
+Checking Rule CMD_ignorelibs01 (Rule 48 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule ReportRuleNotRun (Rule 49 of total 187) .... done (Time = 0.02s, Memory = 8.0K)
+Checking Rule Av_license01 (Rule 50 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/formal_lint_lic_file' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/formal_lint_lic_file' closed.
+ .... done (Time = 0.00s, Memory = -1.4K)
+Checking Rule Av_setup_checks01 (Rule 51 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_sanity01 (Rule 52 of total 187) .... done (Time = 0.00s, Memory = -1.5K)
+Checking Rule ReportStopSummary (Rule 53 of total 187) .... done (Time = 0.00s, Memory = -0.0K)
+Checking Rule ReportIgnoreSummary (Rule 54 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Analysis started: 17 sec, 930482 KB, 2884012 KB
+##SGDEBUG [BENCHMARK_INCR]: Analysis started: 17 sec, 930482 KB, 2884012 KB
+ Analyzing source file "../AES_Encryption.v" ....
+ Analyzing source file "../DFF_128.v" ....
+ Analyzing source file "../Sbox.v" ....
+ Analyzing source file "../roundkey.v" ....
+ Analyzing source file "../mixcolumns.v" ....
+ Analyzing source file "../KeyExpansion.v" ....
+ Analyzing source file "../subbytes.v" ....
+ Analyzing source file "../shiftrows.v" ....
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Analysis finished: 17 sec, 996934 KB, 2950316 KB
+##SGDEBUG [BENCHMARK_INCR]: Analysis finished: 0 sec, 66452 KB, 66304 KB
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Elaboration started: 17 sec, 996955 KB, 2950316 KB
+##SGDEBUG [BENCHMARK_INCR]: Elaboration started: 0 sec, 21 KB, 0 KB
+ Elaborating Top Verilog Design Unit 'AES_Encryption' ..... done
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Elaboration finished: 17 sec, 1062889 KB, 3016108 KB
+##SGDEBUG [BENCHMARK_INCR]: Elaboration finished: 0 sec, 65934 KB, 65792 KB
+##SGDEBUG [BENCHMARK_ABSOLUTE]: RTL Semantic Checker started: 17 sec, 1062889 KB, 3016108 KB
+##SGDEBUG [BENCHMARK_INCR]: RTL Semantic Checker started: 0 sec, 0 KB, 0 KB
+##SGDEBUG [BENCHMARK_ABSOLUTE]: RTL Semantic Checker finished: 17 sec, 1062865 KB, 3016108 KB
+##SGDEBUG [BENCHMARK_INCR]: RTL Semantic Checker finished: 0 sec, -24 KB, 0 KB
+Checking Rule ElabSummary (Rule 55 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_reports/SpyGlass/elab_summary.rpt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_reports/SpyGlass/elab_summary.rpt' closed.
+ .... done (Time = 0.00s, Memory = 10.6K)
+Checking Rule ReportCheckDataSummary (Rule 56 of total 187) .... done (Time = 0.00s, Memory = 2.2K)
+ Reading waiver file "./spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/constraint/spg_autogenerated_waivers.sgdc" ...
+ Generating WAIVER file "./spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/waiver/pragma2Waiver.swl" from pragmas in HDL source files ....
+Checking Rule DetectTopDesignUnits (Rule 57 of total 187) Detected 1 top level design units: 
+     AES_Encryption
+ .... done (Time = 0.01s, Memory = 3.8K)
+Performing semantic checks on SGDC contents
+..... SGDC semantic checks completed. (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_testmode03 (Rule 58 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule ReportObsoletePragmas (Rule 59 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule GenerateConfMap (Rule 60 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule HdlLibDuCheck (Rule 61 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule RtlDesignInfo (Rule 62 of total 187)
+##SGDEBUG [BENCHMARK_DATA]: Number of RTL Design Units = 8
+##SGDEBUG: RTL statistics for Verilog design units:
+##SGDEBUG[BENCHMARK_DATA]: RTL Ports = 32 2078 18
+##SGDEBUG[BENCHMARK_DATA]: RTL Insts = 15
+##SGDEBUG[BENCHMARK_DATA]: RTL Nets = 10 800 10
+##SGDEBUG[BENCHMARK_DATA]: RTL Terms = 43 1676 13
+
+##SGDEBUG: NOTE: Following estimated data is applicable for structural designs only.
+##SGDEBUG:     In case of RTL designs, this data may differ significantly from the actual figure.
+##SGDEBUG[BENCHMARK_DATA]: Estimated Flat Insts = 1
+##SGDEBUG[BENCHMARK_DATA]: Estimated Flat Nets = 256
+##SGDEBUG[BENCHMARK_DATA]: Estimated Flat Terms = 258
+##SGDEBUG[BENCHMARK_DATA]: Estimated Flat Paths = 2
+ .... done (Time = 0.00s, Memory = 0.9K)
+Checking Rule CheckCelldefine (Rule 63 of total 187) .... done (Time = 0.00s, Memory = 2.2K)
+Checking ELABDU Rules for designUnit AES_Encryption
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_reports/SpyGlass/blocks.rpt' in "w" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_reports/SpyGlass/blocks.rpt' closed.
+ .... done (Time = 0.01s, Memory = 5.3K)
+Checking ELABDU Rules for designUnit roundkey
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit DFF_128
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_1
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit Sbox
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_2
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_4
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_8
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 3.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_16
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = -3.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_32
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = -0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_64
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = -0.8K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_128
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = -1.9K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_27
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_54
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 4.0K)
+Checking ELABDU Rules for designUnit subbytes
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit shiftrows
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit mixcolumns
+    Checking Rule GenTopLevelBlocksForAutoSoc (Rule 64 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit AES_Encryption
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = -0.3K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.01s, Memory = 4.0K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 3.5K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = -0.9K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = -6.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 3.9K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.01s, Memory = -0.5K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = 27.5K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.01s, Memory = -5.9K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.02s, Memory = -1.7K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.01s, Memory = -0.1K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 3.9K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = -3.2K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = 4.0K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.9K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit roundkey
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = -0.6K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = 3.6K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = -1.2K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = -4.0K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = -3.5K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = -0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = -0.1K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 4.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.8K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = 7.6K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.4K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.5K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.1K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = -1.4K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = -3.9K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 4.0K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit DFF_128
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 28.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = 9.4K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 3.1K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = 4.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 1.2K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.00s, Memory = 1.7K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.01s, Memory = -0.2K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.9K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = 2.0K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = -1.7K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.01s, Memory = -4.0K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 8.0K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = -1.1K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = 3.4K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.7K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = 5.9K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_1
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = -1.0K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = -2.0K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = -3.5K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = -0.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = -1.1K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 7.9K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.01s, Memory = 0.0K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = 3.7K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.8K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = 4.1K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = 15.7K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.1K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.01s, Memory = -0.0K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = 3.6K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = -3.5K)
+Checking ELABDU Rules for designUnit Sbox
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.01s, Memory = 16.8K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 2.3K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 1.2K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = -0.5K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = -2.2K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = -1.2K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 0.8K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.01s, Memory = 8.0K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = 24.9K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.0K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = -5.9K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.3K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = -28.2K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.01s, Memory = 0.0K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.01s, Memory = -7.0K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = 21.7K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.03s, Memory = 31.6K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_2
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = -0.7K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = -0.5K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 22.2K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = -0.4K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.01s, Memory = -0.4K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = -6.0K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.01s, Memory = 21.5K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.01s, Memory = -4.0K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = -14.7K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.01s, Memory = -0.7K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.8K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 2051.7K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 4.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_4
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = 1.2K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = -1792.0K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 4.0K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = 2.3K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 3.9K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.00s, Memory = -10.5K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = -3.5K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = -5.7K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = 7.5K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = -2.2K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = -2.7K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.5K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = -3.5K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_8
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = 8.6K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.01s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.01s, Memory = 6.7K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.03s, Memory = -0.5K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = -2.8K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = -9.6K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.01s, Memory = -1.8K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 5.0K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.5K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_16
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = -0.9K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 4.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = -2.5K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = -8.0K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 0.6K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 3.6K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = 8.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = 6.7K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.4K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.1K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.01s, Memory = 0.0K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_32
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = -2.5K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = -4.0K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = -0.1K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = -0.1K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 2.5K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.01s, Memory = -0.5K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = -3.2K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = 10.2K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.01s, Memory = 0.0K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.01s, Memory = -0.5K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 3.1K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_64
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = 12.3K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = -20.8K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = -25.8K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 64.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = -2.2K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.00s, Memory = 17.9K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.1K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.01s, Memory = 0.0K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.9K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.1K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = 12.0K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.02s, Memory = 0.0K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_128
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = 2.8K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 11.2K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = -0.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.00s, Memory = 11.7K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.01s, Memory = 0.0K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.3K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.1K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 17.3K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.1K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.01s, Memory = -1.8K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = -2.2K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.8K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_27
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = 11.9K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = -9.1K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 9.8K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = -1.3K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.5K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = -1.1K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = -3.5K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = -3.0K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = -5.2K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = 17.4K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.01s, Memory = 0.0K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = -1.2K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.7K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 11.9K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = -8.0K)
+Checking ELABDU Rules for designUnit WORK_KeyExpansion_54
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.01s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 3.2K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = -2.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = -3.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.00s, Memory = 3.1K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = 25.7K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = 11.5K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 2.3K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = -1.0K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.3K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.1K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = 36.9K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit subbytes
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = -0.5K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 9.5K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 4.9K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = -0.6K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.5K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.5K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = -19.1K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.6K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 3.4K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = -1.0K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = -2.4K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = -11.3K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 18.1K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit shiftrows
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = -0.8K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 0.7K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = -7.4K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 2048.0K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = 4.0K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 2.5K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = -12.0K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = -2.5K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = 11.6K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = 18.3K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking ELABDU Rules for designUnit mixcolumns
+    Checking Rule Av_multitop01 (Rule 65 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_multitop01 (Rule 66 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 67 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule InitState (Rule 68 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 69 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_fsmreq01 (Rule 70 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_rstreq01 (Rule 71 of total 187) .... done (Time = 0.00s, Memory = -1.2K)
+    Checking Rule Av_rstreq01 (Rule 72 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_casereq01 (Rule 73 of total 187) .... done (Time = 0.00s, Memory = 0.6K)
+    Checking Rule Av_deadreq01 (Rule 74 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule Av_deadreq01 (Rule 75 of total 187) .... done (Time = 0.00s, Memory = 1.1K)
+    Checking Rule AnalyzeABV (Rule 76 of total 187) .... done (Time = 0.00s, Memory = 3.8K)
+    Checking Rule veOperatorPreReq (Rule 77 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule veShiftOperatorPreReq (Rule 78 of total 187) .... done (Time = 0.00s, Memory = -12.0K)
+    Checking Rule Av_dcreq01 (Rule 79 of total 187) .... done (Time = 0.00s, Memory = 15.0K)
+    Checking Rule Av_dcreq01 (Rule 80 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+    Checking Rule _chk_signed_unsigned_prereq (Rule 81 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width01_prereq (Rule 82 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width01.txt' closed.
+ .... done (Time = 0.02s, Memory = -20.0K)
+    Checking Rule _width02_prereq (Rule 83 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width02.txt' closed.
+ .... done (Time = 0.00s, Memory = 41.8K)
+    Checking Rule _width03_prereq (Rule 84 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width03.txt' closed.
+ .... done (Time = 0.00s, Memory = 6.5K)
+    Checking Rule _width04_prereq (Rule 85 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width04.txt' closed.
+ .... done (Time = 0.00s, Memory = -0.5K)
+    Checking Rule _signunsign01_prereq (Rule 86 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/sign05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width05_prereq (Rule 87 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width05.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.0K)
+    Checking Rule _width_expr02_mismatch_prereq (Rule 88 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width06.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.4K)
+    Checking Rule _width_expr03_mismatch_prereq (Rule 89 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/width07.txt' closed.
+ .... done (Time = 0.00s, Memory = 3.3K)
+    Checking Rule _dontcare_mismatch_prereq (Rule 90 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/dontcare01.txt' closed.
+ .... done (Time = 0.00s, Memory = 0.1K)
+    Checking Rule _case_default_redundant_prereq (Rule 91 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default01.txt' closed.
+ .... done (Time = 0.00s, Memory = -33.6K)
+    Checking Rule _case_default_missing_prereq (Rule 92 of total 187)##FILEDEBUG[sgOpenFile]: Opening File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' in "a" mode ...
+##FILEDEBUG[sgCloseFile]: File './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_spysch/auto-verify/default02.txt' closed.
+ .... done (Time = 0.00s, Memory = -2.5K)
+    Checking Rule _formallint_preReq (Rule 93 of total 187) .... done (Time = 0.00s, Memory = -10.8K)
+    Checking Rule _avAddSynthNet (Rule 94 of total 187) .... done (Time = 0.00s, Memory = 1.9K)
+##SGDEBUG [BENCHMARK_ABSOLUTE]: RTL Lexical Checker started: 30 sec, 1065458 KB, 3016108 KB
+##SGDEBUG [BENCHMARK_INCR]: RTL Lexical Checker started: 13 sec, 2593 KB, 0 KB
+Checking Lexical Rules for file ../AES_Encryption.v
+    Checking Rule Av_complexity_req01 (Rule 95 of total 187) .... done (Time = 0.00s, Memory = 2.7K)
+Checking Lexical Rules for file ../DFF_128.v
+    Checking Rule Av_complexity_req01 (Rule 95 of total 187) .... done (Time = 0.00s, Memory = 2.7K)
+Checking Lexical Rules for file ../Sbox.v
+    Checking Rule Av_complexity_req01 (Rule 95 of total 187) .... done (Time = 0.00s, Memory = 2.7K)
+Checking Lexical Rules for file ../roundkey.v
+    Checking Rule Av_complexity_req01 (Rule 95 of total 187) .... done (Time = 0.00s, Memory = 3.2K)
+Checking Lexical Rules for file ../mixcolumns.v
+    Checking Rule Av_complexity_req01 (Rule 95 of total 187) .... done (Time = 0.00s, Memory = 2.7K)
+Checking Lexical Rules for file ../KeyExpansion.v
+    Checking Rule Av_complexity_req01 (Rule 95 of total 187) .... done (Time = 0.00s, Memory = -0.3K)
+Checking Lexical Rules for file ../subbytes.v
+    Checking Rule Av_complexity_req01 (Rule 95 of total 187) .... done (Time = 0.00s, Memory = -26.4K)
+Checking Lexical Rules for file ../shiftrows.v
+    Checking Rule Av_complexity_req01 (Rule 95 of total 187) .... done (Time = 0.00s, Memory = -26.7K)
+##SGDEBUG [BENCHMARK_ABSOLUTE]: RTL Lexical Checker finished: 30 sec, 1065429 KB, 3016108 KB
+##SGDEBUG [BENCHMARK_INCR]: RTL Lexical Checker finished: 0 sec, -29 KB, 0 KB
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Synthesis started: 30 sec, 1065357 KB, 3016108 KB
+##SGDEBUG [BENCHMARK_INCR]: Synthesis started: 0 sec, -72 KB, 0 KB
+ Synthesizing module: DFF_128 (elaborated name: DFF_128) ... (Module 1 of total 17)  done 
+     (Memory Used = -135516.5K(incr), 999763.5K(tot), Cpu Time = 0.09s(incr))
+ Synthesizing module: roundkey (elaborated name: roundkey) ... (Module 2 of total 17)  done 
+     (Memory Used = -12.7K(incr), 999772.1K(tot), Cpu Time = 0.24s(incr))
+ Synthesizing module: shiftrows (elaborated name: shiftrows) ... (Module 3 of total 17)  done 
+     (Memory Used = 24.0K(incr), 999815.4K(tot), Cpu Time = 0.11s(incr))
+ Synthesizing module: Sbox (elaborated name: Sbox) ... (Module 4 of total 17)  done 
+     (Memory Used = 39.0K(incr), 999863.8K(tot), Cpu Time = 0.48s(incr))
+ Synthesizing module: subbytes (elaborated name: subbytes) ... (Module 5 of total 17)  done 
+     (Memory Used = -54.5K(incr), 999807.3K(tot), Cpu Time = 0.04s(incr))
+ Synthesizing module: mixcolumns (elaborated name: mixcolumns) ... (Module 6 of total 17)  done 
+     (Memory Used = 39.8K(incr), 999852.8K(tot), Cpu Time = 0.23s(incr))
+ Synthesizing module: KeyExpansion (elaborated name: WORK_KeyExpansion_54) ... (Module 7 of total 17)  done 
+     (Memory Used = -20.3K(incr), 999839.4K(tot), Cpu Time = 0.04s(incr))
+ Synthesizing module: KeyExpansion (elaborated name: WORK_KeyExpansion_27) ... (Module 8 of total 17)  done 
+     (Memory Used = 9.7K(incr), 999853.5K(tot), Cpu Time = 0.24s(incr))
+ Synthesizing module: KeyExpansion (elaborated name: WORK_KeyExpansion_128) ... (Module 9 of total 17)  done 
+     (Memory Used = 11.0K(incr), 999873.9K(tot), Cpu Time = 0.11s(incr))
+ Synthesizing module: KeyExpansion (elaborated name: WORK_KeyExpansion_64) ... (Module 10 of total 17)  done 
+     (Memory Used = 8.5K(incr), 999888.6K(tot), Cpu Time = 0.15s(incr))
+ Synthesizing module: KeyExpansion (elaborated name: WORK_KeyExpansion_32) ... (Module 11 of total 17)  done 
+     (Memory Used = 24.9K(incr), 999906.0K(tot), Cpu Time = 0.05s(incr))
+ Synthesizing module: KeyExpansion (elaborated name: WORK_KeyExpansion_16) ... (Module 12 of total 17)  done 
+     (Memory Used = -2.6K(incr), 999909.6K(tot), Cpu Time = 0.09s(incr))
+ Synthesizing module: KeyExpansion (elaborated name: WORK_KeyExpansion_8) ... (Module 13 of total 17)  done 
+     (Memory Used = 4.8K(incr), 999923.6K(tot), Cpu Time = 0.12s(incr))
+ Synthesizing module: KeyExpansion (elaborated name: WORK_KeyExpansion_4) ... (Module 14 of total 17)  done 
+     (Memory Used = 13.9K(incr), 999943.9K(tot), Cpu Time = 0.07s(incr))
+ Synthesizing module: KeyExpansion (elaborated name: WORK_KeyExpansion_2) ... (Module 15 of total 17)  done 
+     (Memory Used = 7.3K(incr), 999957.5K(tot), Cpu Time = 0.05s(incr))
+ Synthesizing module: KeyExpansion (elaborated name: WORK_KeyExpansion_1) ... (Module 16 of total 17)  done 
+     (Memory Used = 4.5K(incr), 999968.2K(tot), Cpu Time = 0.04s(incr))
+ Synthesizing module: AES_Encryption (elaborated name: AES_Encryption) ... (Module 17 of total 17)  done 
+     (Memory Used = 287.6K(incr), 1000265.1K(tot), Cpu Time = 1.50s(incr))
+ Synthesis completed.
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Synthesis completed: 35 sec, 1000501 KB, 2950828 KB
+##SGDEBUG [BENCHMARK_INCR]: Synthesis completed: 5 sec, -64856 KB, -65280 KB
+Checking Rule InferBlackBox (Rule 96 of total 187) .... done (Time = 0.06s, Memory = -12.9K)
+##SGDEBUG [BENCHMARK_DATA]: Number of NOM Modules = 17
+##SGDEBUG [BENCHMARK_DATA]: Number of NOM Instances = 5608
+##SGDEBUG [BENCHMARK_DATA]: Number of NOM Nets = 16586
+##SGDEBUG [BENCHMARK_DATA]: Number of NOM Terminals = 34931
+##SGDEBUG [BENCHMARK_DATA]: Number of NOM Instances per Module (max and avg) = 3122, 329
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Saving NOM started: 35 sec, 1000489 KB, 2950828 KB
+##SGDEBUG [BENCHMARK_INCR]: Saving NOM started: 0 sec, -12 KB, 0 KB
+
+INFO [234]    Saving design database in directory './spyglass-1/AES_Encryption/.SG_SaveRestoreDB/autogenerated__default_snapshot' ...
+              done
+
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Saving NOM completed: 35 sec, 1066381 KB, 3022516 KB
+##SGDEBUG [BENCHMARK_INCR]: Saving NOM completed: 0 sec, 65892 KB, 71688 KB
+     (Memory Used = 65891.4K(incr), 1066381.2K(tot), Cpu Time = 0.64s(incr))
+Checking Rule SGDC_waive37 (Rule 97 of total 187) .... done (Time = 0.00s, Memory = 1.9K)
+Checking Rule SGDC_waive24 (Rule 98 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive25 (Rule 99 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive31 (Rule 100 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive35 (Rule 101 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module DFF_128 (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module DFF_128 (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module DFF_128 (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module DFF_128 (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module DFF_128 (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module roundkey (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module roundkey (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module roundkey (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module roundkey (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module roundkey (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module shiftrows (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module shiftrows (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module shiftrows (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module shiftrows (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module shiftrows (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module Sbox (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module Sbox (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module Sbox (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module Sbox (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module Sbox (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module subbytes (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module subbytes (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module subbytes (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module subbytes (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module subbytes (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module mixcolumns (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module mixcolumns (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module mixcolumns (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module mixcolumns (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module mixcolumns (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module KeyExpansion (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module KeyExpansion (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module KeyExpansion (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module KeyExpansion (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module KeyExpansion (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module KeyExpansion (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module KeyExpansion (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module KeyExpansion (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module KeyExpansion (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module KeyExpansion (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module KeyExpansion (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module KeyExpansion (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module KeyExpansion (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module KeyExpansion (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module KeyExpansion (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module KeyExpansion (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module KeyExpansion (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module KeyExpansion (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module KeyExpansion (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module KeyExpansion (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module KeyExpansion (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module KeyExpansion (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module KeyExpansion (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module KeyExpansion (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module KeyExpansion (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module KeyExpansion (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module KeyExpansion (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module KeyExpansion (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module KeyExpansion (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module KeyExpansion (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module KeyExpansion (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module KeyExpansion (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module KeyExpansion (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module KeyExpansion (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module KeyExpansion (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module KeyExpansion (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module KeyExpansion (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module KeyExpansion (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module KeyExpansion (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module KeyExpansion (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module KeyExpansion (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module KeyExpansion (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module KeyExpansion (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module KeyExpansion (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module KeyExpansion (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module KeyExpansion (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module KeyExpansion (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module KeyExpansion (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module KeyExpansion (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module KeyExpansion (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_svasetup01 for module AES_Encryption (Rule 102 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_casereq02 for module AES_Encryption (Rule 103 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_deadfilter01 for module AES_Encryption (Rule 104 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_dcreq02 for module AES_Encryption (Rule 105 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_staticnetnreq01 for module AES_Encryption (Rule 106 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Performing semantic checks on SGDC contents
+..... SGDC semantic checks completed. (Time = 0.03s, Memory = -85.4K)
+Checking Rule SGDC_testmode03 (Rule 58 of total 187) .... done (Time = 0.00s, Memory = -1.6K)
+Checking Rule checkSGDC_01 (Rule 107 of total 187) .... done (Time = 0.00s, Memory = -0.6K)
+Checking Rule checkSGDC_03 (Rule 108 of total 187) .... done (Time = 0.01s, Memory = -9.6K)
+Checking Rule checkSGDC_08 (Rule 109 of total 187) .... done (Time = 0.00s, Memory = -0.5K)
+Checking Rule SGDC_memorywritepin04 (Rule 110 of total 187) .... done (Time = 0.00s, Memory = 15.0K)
+Checking Rule SGDC_reset02 (Rule 111 of total 187) .... done (Time = 0.00s, Memory = 15.0K)
+Checking Rule SGDC_reset03 (Rule 112 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive23 (Rule 113 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_waive26 (Rule 114 of total 187) .... done (Time = 0.00s, Memory = 0.3K)
+Checking Rule SGDC_waive27 (Rule 115 of total 187) .... done (Time = 0.00s, Memory = 0.8K)
+Checking Rule SGDC_waive29 (Rule 116 of total 187) .... done (Time = 0.00s, Memory = -0.1K)
+Checking Rule SGDC_libgroup03 (Rule 117 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_ungroup02 (Rule 118 of total 187) .... done (Time = 0.01s, Memory = 0.0K)
+Checking Rule _abstractPortSGDC (Rule 119 of total 187) .... done (Time = 0.00s, Memory = -60.8K)
+Checking Rule SGDC_abstract_port03 (Rule 120 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_abstract_port04 (Rule 121 of total 187) .... done (Time = 0.00s, Memory = 0.9K)
+Checking Rule SGDC_abstract_port05 (Rule 122 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_abstract_port07 (Rule 123 of total 187) .... done (Time = 0.00s, Memory = -1.2K)
+Checking Rule SGDC_abstract_port08 (Rule 124 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_abstract_port10 (Rule 125 of total 187) .... done (Time = 0.00s, Memory = -0.1K)
+Checking Rule SGDC_abstract_port11 (Rule 126 of total 187) .... done (Time = 0.00s, Memory = -0.2K)
+Checking Rule SGDC_abstract_port12 (Rule 127 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule SGDC_abstract_port13 (Rule 128 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_complexity_req02 (Rule 129 of total 187) .... done (Time = 0.00s, Memory = 3.1K)
+Checking Rule ReportUngroup (Rule 130 of total 187) .... done (Time = 0.00s, Memory = 8.0K)
+Checking Rule SGDC_abstract_port21 (Rule 131 of total 187) .... done (Time = 0.00s, Memory = 20.4K)
+Checking Rule Av_casereq03 (Rule 132 of total 187) .... done (Time = 0.00s, Memory = 3.0K)
+Checking Rule SGDC_fsm_setup01 (Rule 133 of total 187) .... done (Time = 0.09s, Memory = -93.2K)
+Checking Rule Av_PortRetention (Rule 134 of total 187) .... done (Time = 0.00s, Memory = 0.5K)
+##SGDEBUG [BENCHMARK_ABSOLUTE]: VS rule checking finished...: 36 sec, 1005240 KB, 2956208 KB
+##SGDEBUG [BENCHMARK_INCR]: VS rule checking finished...: 1 sec, -61141 KB, -66308 KB
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Elab View Deletion Finished: 37 sec, 939339 KB, 2890416 KB
+##SGDEBUG [BENCHMARK_INCR]: Elab View Deletion Finished: 1 sec, -65901 KB, -65792 KB
+##SGDEBUG [BENCHMARK_ABSOLUTE]: After deleting RTL view: 37 sec, 869611 KB, 2821808 KB
+##SGDEBUG [BENCHMARK_INCR]: After deleting RTL view: 0 sec, -69728 KB, -68608 KB
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Flattening started: 37 sec, 870957 KB, 2823088 KB
+##SGDEBUG [BENCHMARK_INCR]: Flattening started: 0 sec, 1346 KB, 1280 KB
+ Flattening AES_Encryption (.lib instances separately flattened) ....
+    69% completed (50000 instances created)
+     (Memory Used = 36491.4K(incr), 907449.2K(tot), Cpu Time = 3.80s(incr))
+ Flattening completed
+##SGDEBUG [BENCHMARK_DATA]: Number of Flat Instances = 72010
+##SGDEBUG [BENCHMARK_DATA]: Number of Flat Nets = 72268
+##SGDEBUG [BENCHMARK_DATA]: Number of Flat Terms = 723708
+##SGDEBUG [BENCHMARK_DATA]: Number of Flat Paths = 301
+##SGDEBUG [BENCHMARK_DATA]: Number of Flat Ports = 389
+##SGDEBUG [BENCHMARK_DATA]: Number of Black-Box Instances = 0
+##SGDEBUG [BENCHMARK_DATA]: Number of Lib Instances = 0
+##SGDEBUG [BENCHMARK_DATA]: Number of ILM Instances = 0
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Flattening finished: 40 sec, 907454 KB, 2852784 KB
+##SGDEBUG [BENCHMARK_INCR]: Flattening finished: 3 sec, 36497 KB, 29696 KB
+Checking Rule SGDC_set_case_analysis_LC (Rule 135 of total 187) .... done (Time = 0.00s, Memory = -2.2K)
+Checking Rule Av_IpblockTaggedNet (Rule 136 of total 187) .... done (Time = 0.00s, Memory = 0.0K)
+Checking Rule Av_initseq01 (Rule 137 of total 187) .... done (Time = 0.00s, Memory = 0.7K)
+Checking Rule Av_init01 (Rule 138 of total 187) .... done (Time = 0.35s, Memory = 4917.6K)
+Checking Rule AnalyzeBBox (Rule 139 of total 187) .... done (Time = 0.00s, Memory = 0.2K)
+
+SpyGlass Rule Checking ABORTED.
+
+Generating data for Console...
+
+Generating moresimple report from './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass.vdb' to './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_reports/moresimple.rpt' ....
+
+Generating runsummary report from './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass.vdb' ....
+
+Generating no_msg_reporting_rules report from './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass.vdb' to './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_reports/no_msg_reporting_rules.rpt' ....
+
+Generating ADV-LINT report from './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass.vdb' to './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_reports/ADV-LINT.rpt' ....
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'ADV_LINT_INFO_FILE' in "r" mode
+##FILEDEBUG[spyOpenFile]: File Opening failed for file-label 'AUTOVERIFY_FUNCTIONAL_TIME_FILE' in "r" mode
+
+Generating auto_verify report from './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass.vdb' to './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_reports/auto_verify.rpt' ....
+
+Policy specific data (reports) are present in the directory './spyglass-1/AES_Encryption/lint/lint_functional_rtl/spyglass_reports'.
+
+SpyGlass critical reports for the current run are present in directory './spyglass-1/consolidated_reports/AES_Encryption_lint_lint_functional_rtl/'.
+##SGDEBUG [PEAK_MEMORY]: 3022516 KB for entire run at 'Saving NOM completed' stage
+##SGDEBUG [VMPEAK_MEMORY]: 3157600 KB for entire run
+##SGDEBUG [BENCHMARK_ABSOLUTE]: Rule checking aborted: 42 sec, 911333 KB, 2857104 KB
+##SGDEBUG [BENCHMARK_INCR]: Rule checking aborted: 2 sec, 3879 KB, 4320 KB
+
+
+=====================================================================================
+							Rule Parameter Table
+=====================================================================================
+
+	PARAMETER-NAME                                     VALUE
+-------------------------------------------------------------------------------------
+	-abstract                                          0
+	-allow_clock_on_output_port                        no
+	-atime                                             UNDEFINED
+	-audit                                             no
+	-av_flopcount                                      -1
+	-av_seqdepth                                       -1
+	-check_case_type                                   all
+	-check_clock_group_violations                      no
+	-check_concat_max_width                            no
+	-check_counter_assignment                          no
+	-check_pad_concat                                  no
+	-check_sequential                                  no
+	-check_sign_extend                                 no
+	-check_static_value                                no
+	-check_unsign_overflow                             no
+	-chk_sign_unsign_also                              no
+	-dccompat                                          no
+	-debug_proc                                        no
+	-disable_rtl_deadcode                              no
+	-force_genclk_for_txv                              no
+	-fv_parallelfile                                   UNDEFINED
+	-handle_shift_op                                   no
+	-ieffort                                           0
+	-ignore_bus_clocks                                 1024
+	-ignore_latches                                    no
+	-ignoreforindex                                    no
+	-library_gen_clock_naming                          yes
+	-modulelist                                        UNDEFINED
+	-netlist_clock_polarity                            yes
+	-nocheckoverflow                                   yes
+	-passfail                                          both
+	-populate_comboelements_for_minmax_in_fromto       no
+	-preserve_path                                     no
+	-propfile                                          UNDEFINED
+	-pt                                                yes
+	-report_blackbox_inst                              no
+	-reportconstassign                                 no
+	-scope                                             chip
+	-show_all_sdc_violations                           no
+	-show_sdc_progress                                 no
+	-solvemethod                                       1
+	-strict                                            no
+	-suppress_sdc_violation_in_abstract                no
+	-tc_disable_caching                                no
+	-tc_stop_parsing_ignored_commands                  no
+	-tclfile                                           UNDEFINED
+	-truncate_through                                  yes
+	-use_carry_bit                                     no
+	-use_inferred_clocks                               no
+	-use_inferred_resets                               no
+	-use_lrm_width                                     no
+	-vcdfile                                           UNDEFINED
+	-vcdfulltrace                                      usernets
+	-vcdtime                                           -1
+	-verbose                                           0
+	-write_sdc                                         no
+=====================================================================================
+
+
+
+=====================================================================================
+                               Rule Status Table
+
+ RULE-NAME                      POLICY-NAME     ENABLED VIOL-CNT RULE-TYPE   ERROR-MSG         
+=====================================================================================
+ Av_staticreg02                 auto-verify     No             - FLATDU2_WL     -               
+ Av_ovl01                       auto-verify     No             - FLATDU2_WL     -               
+ Av_syncfifo01                  auto-verify     No             - FLATDU2_WL     -               
+ Av_eventually_stucknet         auto-verify     No             - FLATDU2_WL     -               
+ Av_setreset01                  auto-verify     No             - FLATDU2_WL     -               
+ Av_staticnet01                 auto-verify     No             - FLATDU2_WL     -               
+ Av_dontcare01                  auto-verify     No             - FLATDU2_WL     -               
+ Av_negative_shift              auto-verify     No             - FLATDU2_WL     -               
+ Av_divide_by_zero              auto-verify     No             - FLATDU2_WL     -               
+ Av_range01                     auto-verify     No             - FLATDU2_WL     -               
+ Av_fsm01                       auto-verify     No             - FLATDU2_WL     -               
+ Av_fsm02                       auto-verify     No             - FLATDU2_WL     -               
+ Av_deadcode01                  auto-verify     No             - FLATDU2_WL     -               
+ Av_case03                      auto-verify     No             - ELABDU         -               
+ Av_case02                      auto-verify     No             - FLATDU2_WL     -               
+ Av_case01                      auto-verify     No             - FLATDU2_WL     -               
+ Av_bus02                       auto-verify     No             - FLATDU2_WL     -               
+ Av_bus01                       auto-verify     No             - FLATDU2_WL     -               
+ Av_complexity01                auto-verify     No             - FLATDU2_WL     -               
+ Av_fsm_analysis                auto-verify     No             - FLATDU2_WL     -               
+ Av_fsminf02                    auto-verify     No             - FLATDU2_WL     -               
+ Av_fsminf01                    auto-verify     No             - FLATDU2_WL     -               
+ Av_sanity04                    auto-verify     No             - FLATDU2_WL     -               
+ Av_rstinf01                    auto-verify     No             - FLATDU2_WL     -               
+ Av_clkinf01                    auto-verify     No             - FLATDU2_WL     -               
+ Av_sanity03                    auto-verify     No             - FLATDU2_WL     -               
+ _avAddSynthNet                 auto-verify     Yes            0 ELABDU         -               
+ _advLintReport01               auto-verify     Yes            0 FLATDU2_WL     -               
+ Av_report01                    auto-verify     Yes            0 FLATDU2_WL     -               
+ Av_IpblockTaggedNet            auto-verify     Yes            0 FLATDU2_PRD_WL   -               
+ Av_PortRetention               auto-verify     Yes            0 VSTOPDU        -               
+ Av_Info_Case_Analysis          auto-verify     Yes            0 FLATDU2_WL     -               
+ _formallint_preReq   (Verilog) auto-verify     Yes            0 ELABDU         -               
+ _case_default_missing_prereq(Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_case_default_missing        auto-verify     Yes            0 FLATDU2_WL     -               
+ _case_default_redundant_prereq(Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_case_default_redundant      auto-verify     Yes            0 FLATDU2_WL     -               
+ _dontcare_mismatch_prereq(Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_dontcare_mismatch           auto-verify     Yes            0 FLATDU2_WL     -               
+ _width_expr03_mismatch_prereq(Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_width_mismatch_expr03       auto-verify     Yes            0 FLATDU2_WL     -               
+ _width_expr02_mismatch_prereq(Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_width_mismatch_expr02       auto-verify     Yes            0 FLATDU2_WL     -               
+ _width05_prereq      (Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_width_mismatch_expr         auto-verify     Yes            0 FLATDU2_WL     -               
+ _signunsign01_prereq (Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_signed_unsigned_mismatch    auto-verify     Yes            0 FLATDU2_WL     -               
+ _width04_prereq      (Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_width_mismatch_function     auto-verify     Yes            0 FLATDU2_WL     -               
+ _width03_prereq      (Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_width_mismatch_port         auto-verify     Yes            0 FLATDU2_WL     -               
+ _width02_prereq      (Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_width_mismatch_case         auto-verify     Yes            0 FLATDU2_WL     -               
+ _width01_prereq      (Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_width_mismatch_assign       auto-verify     Yes            0 FLATDU2_WL     -               
+ _chk_signed_unsigned_prereq(Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_staticnetnreq01             auto-verify     Yes            0 VSDU           -               
+ Av_dcreq01           (VHDL   ) auto-verify     Yes            0 ELABDU         -               
+ Av_dcreq01           (Verilog) auto-verify     Yes            0 ELABDU         -               
+ veShiftOperatorPreReq(Verilog) auto-verify     Yes            0 ELABDU         -               
+ veOperatorPreReq     (Verilog) auto-verify     Yes            0 ELABDU         -               
+ AnalyzeABV           (Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_dcreq02                     auto-verify     Yes            0 VSDU           -               
+ Av_deadfilter01                auto-verify     Yes            0 VSDU           -               
+ Av_deadreq01         (VHDL   ) auto-verify     Yes            0 ELABDU         -               
+ Av_deadreq01         (Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_complexity_req02            auto-verify     Yes            0 VSDULIST       -               
+ Av_complexity_req01  (VHDL   ) auto-verify     Yes            0 LEXICAL        -               
+ Av_complexity_req01  (Verilog) auto-verify     Yes            0 LEXICAL        -               
+ SGDC_fsm_setup01               auto-verify     Yes            0 VSTOPDU        -               
+ _fsm_contr01                   auto-verify     Yes            0 FLATDU2_WL     -               
+ Av_casereq03                   auto-verify     Yes            0 VSTOPDU        -               
+ Av_casereq02         (Verilog) auto-verify     Yes            0 VSDU           -               
+ Av_casereq01         (Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_svasetup01                  auto-verify     Yes            0 VSDU           -               
+ Av_rstreq01          (VHDL   ) auto-verify     Yes            0 ELABDU         -               
+ Av_rstreq01          (Verilog) auto-verify     Yes            0 ELABDU         -               
+ _fsm03_prereq                  auto-verify     Yes            0 FLATDU2_WL     -               
+ Av_fsmreq02                    auto-verify     Yes            0 FLATDU2_WL     -               
+ Av_fsmreq01          (VHDL   ) auto-verify     Yes            0 ELABDU         -               
+ Av_fsmreq01          (Verilog) auto-verify     Yes            0 ELABDU         -               
+ InitState            (VHDL   ) auto-verify     Yes            0 ELABDU         -               
+ InitState            (Verilog) auto-verify     Yes            0 ELABDU         -               
+ _formal_anlysis_filter_prereq  auto-verify     Yes            0 FLATDU2_WL     -               
+ Av_sanity06                    auto-verify     Yes            0 FLATDU2_WL     -               
+ Av_multitop01        (VHDL   ) auto-verify     Yes            0 ELABDU         -               
+ Av_multitop01        (Verilog) auto-verify     Yes            0 ELABDU         -               
+ Av_sanity02                    auto-verify     Yes            0 FLATDU2_WL     -               
+ Av_sanity01                    auto-verify     Yes            0 SETUP          -               
+ Av_setup_checks01              auto-verify     Yes            0 SETUP          -               
+ Av_license01                   auto-verify     Yes            0 SETUP          -               
+ Av_initstate01                 auto-verify     Yes            0 FLATDU2_WL     -               
+ SGDC_av_meta_design_hier01     auto-verify     Yes            0 FLATDU2_WL     -               
+ _vhAvMeta01          (VHDL   ) auto-verify     Yes            0 VSDU           -               
+ Av_init01                      auto-verify     Yes            1 FLATDU2_WL     -               
+ Av_initseq01                   auto-verify     Yes            0 FLATDU2_WL     -               
+ ElabSummary                    SpyGlass        Yes            1 SETUP          -               
+ DetectTopDesignUnits           SpyGlass        Yes            1 RTLALLDULIST   -               
+-------------------------------------------------------------------------------------
+Note: VSDU type of rules (as seen in the above table) are not run on
+      unsynthesized modules reported by 'ErrorAnalyzeBBox/InfoAnalyzeBBox' messages
+      (Please see messages starting with keyword 'UnsynthesizedDU')
+
+##status : SpyGlass Rule Checking Aborted.
+
+---------------------------------------------------------------------------------------------
+Results Summary:
+---------------------------------------------------------------------------------------------
+   Goal Run           :      lint/lint_functional_rtl
+   Design Read        :      0 fatal,      0 error,        0 warning,      2 information messages
+      Found 1 top module:
+         AES_Encryption   (file: ../AES_Encryption.v)
+
+** Policy auto-verify :      1 fatal,      0 error,        0 warning,      0 information message 
+   -------------------------------------------------------------------------------------
+** Total              :      1 fatal,      0 error,        0 warning,      2 information messages
+
+  Total Number of Generated Messages     :         3 (1 fatal, 0 error, 0 warning, 2 Infos)
+  Number of Reported Messages            :         3 (1 fatal, 0 error, 0 warning, 2 Infos)
+
+  NOTE: It is recommended to first fix/reconcile fatals/errors reported on
+        lines starting with ** as subsequent issues might be related to it.
+        Please re-run SpyGlass once ** prefixed lines are fatal/error clean.
+
+---------------------------------------------------------------------------------------------
+
+Following FATAL message(s) generated in current run -
+
+Rule        Severity   File                  Line   Message
+-------------------------------------------------------------------------
+Av_init01   Fatal      ../AES_Encryption.v   3      Could not find clocks for all the flops. Please add clock SGDC constraint to the design
+
+FATAL : Rule-checking aborted - usage or run error
+SpyGlass Exit Code 7 (Rule-checking terminated due to FATAL errors - usage or run error)
+SpyGlass total run-time is 0:0:34 (34 secs)
+SpyGlass run completed at 08:18:26 AM on Sep 08 2025

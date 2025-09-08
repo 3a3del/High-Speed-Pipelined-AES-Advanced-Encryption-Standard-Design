@@ -1,0 +1,7 @@
+current_design AES_Encryption
+
+# Clocks
+clock -name clk -tag MAIN_CLK -period 10 -edge {0 5}
+
+# Resets
+reset -async -name rst_n -value 0

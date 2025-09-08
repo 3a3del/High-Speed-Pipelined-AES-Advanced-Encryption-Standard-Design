@@ -1,0 +1,6 @@
+Module Name,Module Type,Port Name,Direction,Width,Index,Comment Source,Comment 
+AES_Encryption,Top_Level,clk,INPUT,1,-,-,-
+AES_Encryption,Top_Level,rst_n,INPUT,1,-,-,-
+AES_Encryption,Top_Level,Data_in,INPUT,128,[127:0],-,-
+AES_Encryption,Top_Level,key_in,INPUT,128,[127:0],-,-
+AES_Encryption,Top_Level,cipher_out,OUTPUT,128,[127:0],-,-

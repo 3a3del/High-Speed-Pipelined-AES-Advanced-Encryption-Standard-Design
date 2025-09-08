@@ -1,0 +1,220 @@
+read_file -type verilog {../AES_Encryption.v ../DFF_128.v ../Sbox.v ../roundkey.v ../mixcolumns.v ../KeyExpansion.v ../subbytes.v ../shiftrows.v}
+set_option top AES_Encryption
+AES_Encryption
+current_design AES_Encryption
+
+# Clocks
+clock -name clk -tag MAIN_CLK -period 10 -edge {0 5}
+
+# Resets
+reset -async -name rst_n -value 0
+current_design AES_Encryption
+reset -async -name rst_n -value 0
+man clock
+
+
+current_goal lint/lint_rtl -top AES_Encryption
+run_goal
+current_goal lint/lint_turbo_rtl -top AES_Encryption
+run_goal
+current_goal lint/lint_functional_rtl -top AES_Encryption
+run_goal
+current_goal lint/lint_abstract -top AES_Encryption
+run_goal
+current_goal lint/lint_rtl -top AES_Encryption
+
+
+
+
+
+
+
+
+set_parameter reportLibLatch true
+set_parameter reportHangingLatch true
+set_parameter report_all_messages -default
+set_parameter report_all_messages yes
+set_parameter report_all_rst yes
+set_parameter report_floating_source true
+set_parameter write_sdc yes
+set_parameter waiver_compat yes
+set_parameter rme_eco_flow on
+set_parameter rme_generate_design_database_report on
+set_parameter reportconstassign yes
+set_parameter reportsimilarassgn yes
+set_parameter checkblocking true
+set_parameter check_xassign_casedefault true
+set_parameter check_temporary_flop true
+set_parameter check_latch true
+set_parameter check_initialization_assignment true
+set_parameter check_sequential true
+set_option enableSV yes
+run_goal
+
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/summary.rpt {write_report summary}
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/spyglass_violations.rpt {write_report spyglass_violations}
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/SignalUsageReport.rpt {write_report SignalUsageReport}
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/CombLoopReport.rpt {write_report CombLoopReport}
+current_goal lint/lint_turbo_rtl -top AES_Encryption
+
+
+
+
+
+current_goal Design_Read -top AES_Encryption
+
+
+set_option designread_enable_synthesis yes
+current_goal lint/lint_turbo_rtl -top AES_Encryption
+
+
+set_parameter write_sdc yes
+set_parameter rme_generate_design_database_report on
+set_parameter rme_eco_flow on
+set_parameter reportalwayslatch true
+set_parameter reportconstassign yes
+set_parameter reportsimilarassgn yes
+set_parameter report_floating_source true
+set_parameter report_flop_clock_loop true
+set_parameter report_flop_reset_loop true
+set_parameter reportLibLatch true
+set_parameter report_all_rst yes
+set_parameter report_allclk yes
+set_parameter report_all_messages yes
+set_parameter checkblocking true
+set_parameter checknonblocking true
+set_parameter check_temporary_flop true
+set_parameter check_xassign_casedefault true
+set_parameter check_sequential true
+set_parameter check_latch true
+
+
+current_goal lint/lint_rtl -top AES_Encryption
+run_goal
+current_goal lint/lint_turbo_rtl -top AES_Encryption
+run_goal
+current_goal lint/lint_functional_rtl -top AES_Encryption
+run_goal
+current_goal lint/lint_abstract -top AES_Encryption
+run_goal
+current_goal lint/lint_rtl -top AES_Encryption
+
+
+
+
+
+
+current_goal lint/lint_rtl -top AES_Encryption
+run_goal
+current_goal lint/lint_turbo_rtl -top AES_Encryption
+run_goal
+current_goal lint/lint_functional_rtl -top AES_Encryption
+run_goal
+current_goal lint/lint_abstract -top AES_Encryption
+run_goal
+current_goal lint/lint_rtl -top AES_Encryption
+
+
+
+
+
+
+
+
+
+
+
+
+current_goal lint/lint_turbo_rtl -top AES_Encryption
+
+
+current_goal lint/lint_functional_rtl -top AES_Encryption
+
+
+current_goal lint/lint_rtl -top AES_Encryption
+
+
+gui_open_schematic -ms
+read_file -type awl ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass-1_waiver_file.awl
+waive -du AES_Encryption -rule ALL -comment {Created by ICer on 08-Sep-2025 08:24:37}
+
+
+
+
+
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/spyglass_violations.rpt {write_report spyglass_violations}
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/summary.rpt {write_report summary}
+run_goal
+
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/spyglass_violations.rpt {write_report spyglass_violations}
+
+
+current_goal lint/lint_rtl -top AES_Encryption
+run_goal
+
+
+
+
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/spyglass_violations.rpt {write_report spyglass_violations}
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/spyglass_violations.rpt {write_report spyglass_violations}
+write_aggregate_report html -config_file /tmp/config_11817 -reportdir ./spyglass-1/html_reports/
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/SignalUsageReport.rpt {write_report SignalUsageReport}
+
+
+
+current_goal Design_Read -top AES_Encryption
+
+
+set_option report_incr_messages yes
+
+
+
+current_goal Design_Read -top AES_Encryption
+
+
+compile_design -force
+
+current_goal lint/lint_rtl -top AES_Encryption
+
+
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/elab_summary.rpt {write_report elab_summary}
+
+
+
+current_goal Design_Read -top AES_Encryption
+
+
+compile_design -force
+compile_design -force
+compile_design -force
+
+
+
+capture ./spyglass-1/AES_Encryption/Design_Read/spyglass_reports/spyglass_violations.rpt {write_report spyglass_violations}
+current_goal lint/lint_rtl -top AES_Encryption
+
+
+remove_goal_option report
+set_goal_option report elab_summary ignore_summary stop_summary spyglass_violations sign_off_sevlabel sign_off moresimple_filesort moresimple_rulesort waiver inline summary_sevlabel summary count score moresimple_turbo moresimple_sevclass no_msg_reporting_rules drag moresimple simple RptSimLoop01 LDHist
+set_goal_option report_incr_messages no
+remove_goal_option report
+set_goal_option report elab_summary ignore_summary stop_summary spyglass_violations sign_off_sevlabel sign_off moresimple_filesort moresimple_rulesort waiver inline summary_sevlabel summary count score moresimple_turbo moresimple_sevclass no_msg_reporting_rules drag moresimple simple RptSimLoop01 LDHist
+
+
+current_goal lint/lint_rtl -top AES_Encryption
+run_goal
+
+
+
+
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/spyglass_violations.rpt {write_report spyglass_violations}
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/spyglass_violations.rpt {write_report spyglass_violations}
+gui_open_schematic -ms
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/elab_summary.rpt {write_report elab_summary}
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/spyglass_violations.rpt {write_report spyglass_violations}
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/spyglass_violations.rpt {write_report spyglass_violations}
+capture ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass_reports/elab_summary.rpt {write_report elab_summary}
+save_project -force /home/ICer/AES_Project/spy/AES
+gui_exit
+gui_exit

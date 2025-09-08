@@ -1,0 +1,819 @@
+
+*** Running vivado
+    with args -log AES_Encryption.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source AES_Encryption.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source AES_Encryption.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 326.664 ; gain = 97.512
+Command: synth_design -top AES_Encryption -part xc7vx485tffg1157-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19804 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 436.910 ; gain = 97.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'AES_Encryption' [C:/Users/hp/Desktop/AES_Project/AES_Encryption.v:3]
+	Parameter NUM_ROUNDS bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'KeyExpansion' [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+	Parameter g bound to: 8'b00000001 
+INFO: [Synth 8-6157] synthesizing module 'Sbox' [C:/Users/hp/Desktop/AES_Project/Sbox.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Sbox' (1#1) [C:/Users/hp/Desktop/AES_Project/Sbox.v:2]
+INFO: [Synth 8-6157] synthesizing module 'DFF_128' [C:/Users/hp/Desktop/AES_Project/DFF_128.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DFF_128' (2#1) [C:/Users/hp/Desktop/AES_Project/DFF_128.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'KeyExpansion' (3#1) [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+INFO: [Synth 8-6157] synthesizing module 'KeyExpansion__parameterized0' [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+	Parameter g bound to: 8'b00000010 
+INFO: [Synth 8-6155] done synthesizing module 'KeyExpansion__parameterized0' (3#1) [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+INFO: [Synth 8-6157] synthesizing module 'KeyExpansion__parameterized1' [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+	Parameter g bound to: 8'b00000100 
+INFO: [Synth 8-6155] done synthesizing module 'KeyExpansion__parameterized1' (3#1) [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+INFO: [Synth 8-6157] synthesizing module 'KeyExpansion__parameterized2' [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+	Parameter g bound to: 8'b00001000 
+INFO: [Synth 8-6155] done synthesizing module 'KeyExpansion__parameterized2' (3#1) [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+INFO: [Synth 8-6157] synthesizing module 'KeyExpansion__parameterized3' [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+	Parameter g bound to: 8'b00010000 
+INFO: [Synth 8-6155] done synthesizing module 'KeyExpansion__parameterized3' (3#1) [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+INFO: [Synth 8-6157] synthesizing module 'KeyExpansion__parameterized4' [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+	Parameter g bound to: 8'b00100000 
+INFO: [Synth 8-6155] done synthesizing module 'KeyExpansion__parameterized4' (3#1) [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+INFO: [Synth 8-6157] synthesizing module 'KeyExpansion__parameterized5' [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+	Parameter g bound to: 8'b01000000 
+INFO: [Synth 8-6155] done synthesizing module 'KeyExpansion__parameterized5' (3#1) [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+INFO: [Synth 8-6157] synthesizing module 'KeyExpansion__parameterized6' [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+	Parameter g bound to: 8'b10000000 
+INFO: [Synth 8-6155] done synthesizing module 'KeyExpansion__parameterized6' (3#1) [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+INFO: [Synth 8-6157] synthesizing module 'KeyExpansion__parameterized7' [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+	Parameter g bound to: 8'b00011011 
+INFO: [Synth 8-6155] done synthesizing module 'KeyExpansion__parameterized7' (3#1) [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+INFO: [Synth 8-6157] synthesizing module 'KeyExpansion__parameterized8' [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+	Parameter g bound to: 8'b00110110 
+INFO: [Synth 8-6155] done synthesizing module 'KeyExpansion__parameterized8' (3#1) [C:/Users/hp/Desktop/AES_Project/KeyExpansion.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mixcolumns' [C:/Users/hp/Desktop/AES_Project/mixcolumns.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mixcolumns' (4#1) [C:/Users/hp/Desktop/AES_Project/mixcolumns.v:3]
+INFO: [Synth 8-6157] synthesizing module 'subbytes' [C:/Users/hp/Desktop/AES_Project/subbytes.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'subbytes' (5#1) [C:/Users/hp/Desktop/AES_Project/subbytes.v:3]
+INFO: [Synth 8-6157] synthesizing module 'shiftrows' [C:/Users/hp/Desktop/AES_Project/shiftrows.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'shiftrows' (6#1) [C:/Users/hp/Desktop/AES_Project/shiftrows.v:3]
+INFO: [Synth 8-6157] synthesizing module 'roundkey' [C:/Users/hp/Desktop/AES_Project/roundkey.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'roundkey' (7#1) [C:/Users/hp/Desktop/AES_Project/roundkey.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'AES_Encryption' (8#1) [C:/Users/hp/Desktop/AES_Project/AES_Encryption.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 491.930 ; gain = 152.398
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 491.930 ; gain = 152.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 491.930 ; gain = 152.398
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hp/Desktop/AES_Project/AES_Vivado/AES_Vivado.srcs/constrs_1/new/cons.xdc]
+Finished Parsing XDC File [C:/Users/hp/Desktop/AES_Project/AES_Vivado/AES_Vivado.srcs/constrs_1/new/cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hp/Desktop/AES_Project/AES_Vivado/AES_Vivado.srcs/constrs_1/new/cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AES_Encryption_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AES_Encryption_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 1036.309 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:23 ; elapsed = 00:03:16 . Memory (MB): peak = 1036.309 ; gain = 696.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:23 ; elapsed = 00:03:16 . Memory (MB): peak = 1036.309 ; gain = 696.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:23 ; elapsed = 00:03:16 . Memory (MB): peak = 1036.309 ; gain = 696.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:26 ; elapsed = 00:03:23 . Memory (MB): peak = 1036.309 ; gain = 696.777
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 390   
+	   3 Input      8 Bit         XORs := 81    
+	   5 Input      8 Bit         XORs := 45    
+	   4 Input      8 Bit         XORs := 27    
++---Registers : 
+	              128 Bit    Registers := 50    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DFF_128 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+Module roundkey 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module KeyExpansion 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module KeyExpansion__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module KeyExpansion__parameterized1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module KeyExpansion__parameterized2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module KeyExpansion__parameterized3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module KeyExpansion__parameterized4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module KeyExpansion__parameterized5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module KeyExpansion__parameterized6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module KeyExpansion__parameterized7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module KeyExpansion__parameterized8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 16    
+Module mixcolumns 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 6     
+	   3 Input      8 Bit         XORs := 9     
+	   5 Input      8 Bit         XORs := 5     
+	   4 Input      8 Bit         XORs := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:08 ; elapsed = 00:05:43 . Memory (MB): peak = 1036.309 ; gain = 696.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+------------------------+---------------+----------------+
+|Module Name  | RTL Object             | Depth x Width | Implemented As | 
++-------------+------------------------+---------------+----------------+
+|Sbox         | b                      | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|KeyExpansion | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|subbytes     | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|subbytes     | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|subbytes     | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[32].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[40].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[48].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[56].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[64].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[72].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[88].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[96].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[104].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[112].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[120].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[64].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[72].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[80].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[88].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[96].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[104].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[112].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[120].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|subbytes     | sbox_loop[8].s_box/b   | 256x8         | LUT            | 
+|subbytes     | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[32].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[40].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[48].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[56].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[64].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[80].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[88].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[96].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[104].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[112].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[120].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[56].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[96].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[104].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[112].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[120].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|subbytes     | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[32].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[40].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[48].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[56].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[64].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[72].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[80].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[88].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[96].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[104].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[112].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[120].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[72].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[80].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[88].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[96].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[104].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[120].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|subbytes     | sbox_loop[48].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[80].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[88].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|subbytes     | sbox_loop[32].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[40].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[88].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[72].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[80].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[88].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[96].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[104].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[112].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[120].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[0].s_box/b   | 256x8         | LUT            | 
+|subbytes     | sbox_loop[16].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[24].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[32].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[40].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[56].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[64].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[72].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[80].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[88].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[96].s_box/b  | 256x8         | LUT            | 
+|subbytes     | sbox_loop[104].s_box/b | 256x8         | LUT            | 
+|subbytes     | sbox_loop[120].s_box/b | 256x8         | LUT            | 
++-------------+------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:39 ; elapsed = 00:06:19 . Memory (MB): peak = 1070.074 ; gain = 730.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:50 ; elapsed = 00:06:31 . Memory (MB): peak = 1122.727 ; gain = 783.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:11 ; elapsed = 00:06:56 . Memory (MB): peak = 1122.727 ; gain = 783.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:19 ; elapsed = 00:07:04 . Memory (MB): peak = 1122.727 ; gain = 783.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:19 ; elapsed = 00:07:05 . Memory (MB): peak = 1122.727 ; gain = 783.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:28 ; elapsed = 00:07:16 . Memory (MB): peak = 1122.727 ; gain = 783.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:30 ; elapsed = 00:07:18 . Memory (MB): peak = 1122.727 ; gain = 783.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:31 ; elapsed = 00:07:20 . Memory (MB): peak = 1122.727 ; gain = 783.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:31 ; elapsed = 00:07:20 . Memory (MB): peak = 1122.727 ; gain = 783.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     1|
+|3     |LUT2  |  1408|
+|4     |LUT3  |   144|
+|5     |LUT5  |  1328|
+|6     |LUT6  |  7104|
+|7     |MUXF7 |  3200|
+|8     |MUXF8 |  1536|
+|9     |FDCE  |  6400|
+|10    |IBUF  |   258|
+|11    |OBUF  |   128|
++------+------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------------+-----------------------------+------+
+|      |Instance                                       |Module                       |Cells |
++------+-----------------------------------------------+-----------------------------+------+
+|1     |top                                            |                             | 21508|
+|2     |  \gen_rounds[1].gen_mixcols.mix_columns_inst  |mixcolumns                   |   128|
+|3     |    DUT                                        |DFF_128_214                  |   128|
+|4     |  \gen_rounds[1].sub_bytes_inst                |subbytes_2                   |   512|
+|5     |    DUT                                        |DFF_128_195                  |   128|
+|6     |    \sbox_loop[0].s_box                        |Sbox_196                     |    24|
+|7     |    \sbox_loop[104].s_box                      |Sbox_197                     |    24|
+|8     |    \sbox_loop[112].s_box                      |Sbox_198                     |    24|
+|9     |    \sbox_loop[120].s_box                      |Sbox_199                     |    24|
+|10    |    \sbox_loop[16].s_box                       |Sbox_200                     |    24|
+|11    |    \sbox_loop[24].s_box                       |Sbox_201                     |    24|
+|12    |    \sbox_loop[32].s_box                       |Sbox_202                     |    24|
+|13    |    \sbox_loop[40].s_box                       |Sbox_203                     |    24|
+|14    |    \sbox_loop[48].s_box                       |Sbox_204                     |    24|
+|15    |    \sbox_loop[56].s_box                       |Sbox_205                     |    24|
+|16    |    \sbox_loop[64].s_box                       |Sbox_206                     |    24|
+|17    |    \sbox_loop[72].s_box                       |Sbox_207                     |    24|
+|18    |    \sbox_loop[80].s_box                       |Sbox_208                     |    24|
+|19    |    \sbox_loop[88].s_box                       |Sbox_209                     |    24|
+|20    |    \sbox_loop[8].s_box                        |Sbox_210                     |    24|
+|21    |    \sbox_loop[96].s_box                       |Sbox_211                     |    24|
+|22    |  \gen_rounds[2].gen_mixcols.mix_columns_inst  |mixcolumns_3                 |   128|
+|23    |    DUT                                        |DFF_128_194                  |   128|
+|24    |  \gen_rounds[3].gen_mixcols.mix_columns_inst  |mixcolumns_7                 |   128|
+|25    |    DUT                                        |DFF_128_174                  |   128|
+|26    |  \gen_rounds[4].gen_mixcols.mix_columns_inst  |mixcolumns_11                |   128|
+|27    |    DUT                                        |DFF_128_154                  |   128|
+|28    |  \gen_rounds[5].gen_mixcols.mix_columns_inst  |mixcolumns_15                |   128|
+|29    |    DUT                                        |DFF_128_134                  |   128|
+|30    |  \gen_rounds[6].gen_mixcols.mix_columns_inst  |mixcolumns_19                |   128|
+|31    |    DUT                                        |DFF_128_114                  |   128|
+|32    |  \gen_rounds[7].gen_mixcols.mix_columns_inst  |mixcolumns_23                |   128|
+|33    |    DUT                                        |DFF_128_94                   |   128|
+|34    |  \gen_rounds[8].gen_mixcols.mix_columns_inst  |mixcolumns_27                |   128|
+|35    |    DUT                                        |DFF_128_74                   |   128|
+|36    |  \gen_rounds[9].gen_mixcols.mix_columns_inst  |mixcolumns_31                |   128|
+|37    |    DUT                                        |DFF_128_54                   |   128|
+|38    |  \gen_rounds[10].sub_bytes_inst               |subbytes                     |   512|
+|39    |    DUT                                        |DFF_128_215                  |   128|
+|40    |    \sbox_loop[0].s_box                        |Sbox_216                     |    24|
+|41    |    \sbox_loop[104].s_box                      |Sbox_217                     |    24|
+|42    |    \sbox_loop[112].s_box                      |Sbox_218                     |    24|
+|43    |    \sbox_loop[120].s_box                      |Sbox_219                     |    24|
+|44    |    \sbox_loop[16].s_box                       |Sbox_220                     |    24|
+|45    |    \sbox_loop[24].s_box                       |Sbox_221                     |    24|
+|46    |    \sbox_loop[32].s_box                       |Sbox_222                     |    24|
+|47    |    \sbox_loop[40].s_box                       |Sbox_223                     |    24|
+|48    |    \sbox_loop[48].s_box                       |Sbox_224                     |    24|
+|49    |    \sbox_loop[56].s_box                       |Sbox_225                     |    24|
+|50    |    \sbox_loop[64].s_box                       |Sbox_226                     |    24|
+|51    |    \sbox_loop[72].s_box                       |Sbox_227                     |    24|
+|52    |    \sbox_loop[80].s_box                       |Sbox_228                     |    24|
+|53    |    \sbox_loop[88].s_box                       |Sbox_229                     |    24|
+|54    |    \sbox_loop[8].s_box                        |Sbox_230                     |    24|
+|55    |    \sbox_loop[96].s_box                       |Sbox_231                     |    24|
+|56    |  \gen_key_expansion[10].key_exp_inst          |KeyExpansion__parameterized8 |   336|
+|57    |    DUT                                        |DFF_128_279                  |   256|
+|58    |    \sbox_loop[0].s_box                        |Sbox_280                     |    20|
+|59    |    \sbox_loop[16].s_box                       |Sbox_281                     |    20|
+|60    |    \sbox_loop[24].s_box                       |Sbox_282                     |    20|
+|61    |    \sbox_loop[8].s_box                        |Sbox_283                     |    20|
+|62    |  \gen_key_expansion[1].key_exp_inst           |KeyExpansion                 |   804|
+|63    |    DUT                                        |DFF_128_274                  |   616|
+|64    |    \sbox_loop[0].s_box                        |Sbox_275                     |    47|
+|65    |    \sbox_loop[16].s_box                       |Sbox_276                     |    47|
+|66    |    \sbox_loop[24].s_box                       |Sbox_277                     |    47|
+|67    |    \sbox_loop[8].s_box                        |Sbox_278                     |    47|
+|68    |  \gen_key_expansion[2].key_exp_inst           |KeyExpansion__parameterized0 |   576|
+|69    |    DUT                                        |DFF_128_269                  |   484|
+|70    |    \sbox_loop[0].s_box                        |Sbox_270                     |    23|
+|71    |    \sbox_loop[16].s_box                       |Sbox_271                     |    23|
+|72    |    \sbox_loop[24].s_box                       |Sbox_272                     |    23|
+|73    |    \sbox_loop[8].s_box                        |Sbox_273                     |    23|
+|74    |  \gen_key_expansion[3].key_exp_inst           |KeyExpansion__parameterized1 |   576|
+|75    |    DUT                                        |DFF_128_264                  |   484|
+|76    |    \sbox_loop[0].s_box                        |Sbox_265                     |    23|
+|77    |    \sbox_loop[16].s_box                       |Sbox_266                     |    23|
+|78    |    \sbox_loop[24].s_box                       |Sbox_267                     |    23|
+|79    |    \sbox_loop[8].s_box                        |Sbox_268                     |    23|
+|80    |  \gen_key_expansion[4].key_exp_inst           |KeyExpansion__parameterized2 |   576|
+|81    |    DUT                                        |DFF_128_259                  |   484|
+|82    |    \sbox_loop[0].s_box                        |Sbox_260                     |    23|
+|83    |    \sbox_loop[16].s_box                       |Sbox_261                     |    23|
+|84    |    \sbox_loop[24].s_box                       |Sbox_262                     |    23|
+|85    |    \sbox_loop[8].s_box                        |Sbox_263                     |    23|
+|86    |  \gen_key_expansion[5].key_exp_inst           |KeyExpansion__parameterized3 |   576|
+|87    |    DUT                                        |DFF_128_254                  |   484|
+|88    |    \sbox_loop[0].s_box                        |Sbox_255                     |    23|
+|89    |    \sbox_loop[16].s_box                       |Sbox_256                     |    23|
+|90    |    \sbox_loop[24].s_box                       |Sbox_257                     |    23|
+|91    |    \sbox_loop[8].s_box                        |Sbox_258                     |    23|
+|92    |  \gen_key_expansion[6].key_exp_inst           |KeyExpansion__parameterized4 |   576|
+|93    |    DUT                                        |DFF_128_249                  |   484|
+|94    |    \sbox_loop[0].s_box                        |Sbox_250                     |    23|
+|95    |    \sbox_loop[16].s_box                       |Sbox_251                     |    23|
+|96    |    \sbox_loop[24].s_box                       |Sbox_252                     |    23|
+|97    |    \sbox_loop[8].s_box                        |Sbox_253                     |    23|
+|98    |  \gen_key_expansion[7].key_exp_inst           |KeyExpansion__parameterized5 |   576|
+|99    |    DUT                                        |DFF_128_244                  |   484|
+|100   |    \sbox_loop[0].s_box                        |Sbox_245                     |    23|
+|101   |    \sbox_loop[16].s_box                       |Sbox_246                     |    23|
+|102   |    \sbox_loop[24].s_box                       |Sbox_247                     |    23|
+|103   |    \sbox_loop[8].s_box                        |Sbox_248                     |    23|
+|104   |  \gen_key_expansion[8].key_exp_inst           |KeyExpansion__parameterized6 |   588|
+|105   |    DUT                                        |DFF_128_239                  |   496|
+|106   |    \sbox_loop[0].s_box                        |Sbox_240                     |    23|
+|107   |    \sbox_loop[16].s_box                       |Sbox_241                     |    23|
+|108   |    \sbox_loop[24].s_box                       |Sbox_242                     |    23|
+|109   |    \sbox_loop[8].s_box                        |Sbox_243                     |    23|
+|110   |  \gen_key_expansion[9].key_exp_inst           |KeyExpansion__parameterized7 |   576|
+|111   |    DUT                                        |DFF_128_234                  |   496|
+|112   |    \sbox_loop[0].s_box                        |Sbox_235                     |    20|
+|113   |    \sbox_loop[16].s_box                       |Sbox_236                     |    20|
+|114   |    \sbox_loop[24].s_box                       |Sbox_237                     |    20|
+|115   |    \sbox_loop[8].s_box                        |Sbox_238                     |    20|
+|116   |  \gen_rounds[10].round_key_inst               |roundkey                     |   129|
+|117   |    DUT                                        |DFF_128_233                  |   129|
+|118   |  \gen_rounds[10].shift_rows_inst              |shiftrows                    |   128|
+|119   |    DUT                                        |DFF_128_232                  |   128|
+|120   |  \gen_rounds[1].round_key_inst                |roundkey_0                   |   640|
+|121   |    DUT                                        |DFF_128_213                  |   640|
+|122   |  \gen_rounds[1].shift_rows_inst               |shiftrows_1                  |   256|
+|123   |    DUT                                        |DFF_128_212                  |   256|
+|124   |  \gen_rounds[2].round_key_inst                |roundkey_4                   |   640|
+|125   |    DUT                                        |DFF_128_193                  |   640|
+|126   |  \gen_rounds[2].shift_rows_inst               |shiftrows_5                  |   256|
+|127   |    DUT                                        |DFF_128_192                  |   256|
+|128   |  \gen_rounds[2].sub_bytes_inst                |subbytes_6                   |   512|
+|129   |    DUT                                        |DFF_128_175                  |   128|
+|130   |    \sbox_loop[0].s_box                        |Sbox_176                     |    24|
+|131   |    \sbox_loop[104].s_box                      |Sbox_177                     |    24|
+|132   |    \sbox_loop[112].s_box                      |Sbox_178                     |    24|
+|133   |    \sbox_loop[120].s_box                      |Sbox_179                     |    24|
+|134   |    \sbox_loop[16].s_box                       |Sbox_180                     |    24|
+|135   |    \sbox_loop[24].s_box                       |Sbox_181                     |    24|
+|136   |    \sbox_loop[32].s_box                       |Sbox_182                     |    24|
+|137   |    \sbox_loop[40].s_box                       |Sbox_183                     |    24|
+|138   |    \sbox_loop[48].s_box                       |Sbox_184                     |    24|
+|139   |    \sbox_loop[56].s_box                       |Sbox_185                     |    24|
+|140   |    \sbox_loop[64].s_box                       |Sbox_186                     |    24|
+|141   |    \sbox_loop[72].s_box                       |Sbox_187                     |    24|
+|142   |    \sbox_loop[80].s_box                       |Sbox_188                     |    24|
+|143   |    \sbox_loop[88].s_box                       |Sbox_189                     |    24|
+|144   |    \sbox_loop[8].s_box                        |Sbox_190                     |    24|
+|145   |    \sbox_loop[96].s_box                       |Sbox_191                     |    24|
+|146   |  \gen_rounds[3].round_key_inst                |roundkey_8                   |   640|
+|147   |    DUT                                        |DFF_128_173                  |   640|
+|148   |  \gen_rounds[3].shift_rows_inst               |shiftrows_9                  |   256|
+|149   |    DUT                                        |DFF_128_172                  |   256|
+|150   |  \gen_rounds[3].sub_bytes_inst                |subbytes_10                  |   512|
+|151   |    DUT                                        |DFF_128_155                  |   128|
+|152   |    \sbox_loop[0].s_box                        |Sbox_156                     |    24|
+|153   |    \sbox_loop[104].s_box                      |Sbox_157                     |    24|
+|154   |    \sbox_loop[112].s_box                      |Sbox_158                     |    24|
+|155   |    \sbox_loop[120].s_box                      |Sbox_159                     |    24|
+|156   |    \sbox_loop[16].s_box                       |Sbox_160                     |    24|
+|157   |    \sbox_loop[24].s_box                       |Sbox_161                     |    24|
+|158   |    \sbox_loop[32].s_box                       |Sbox_162                     |    24|
+|159   |    \sbox_loop[40].s_box                       |Sbox_163                     |    24|
+|160   |    \sbox_loop[48].s_box                       |Sbox_164                     |    24|
+|161   |    \sbox_loop[56].s_box                       |Sbox_165                     |    24|
+|162   |    \sbox_loop[64].s_box                       |Sbox_166                     |    24|
+|163   |    \sbox_loop[72].s_box                       |Sbox_167                     |    24|
+|164   |    \sbox_loop[80].s_box                       |Sbox_168                     |    24|
+|165   |    \sbox_loop[88].s_box                       |Sbox_169                     |    24|
+|166   |    \sbox_loop[8].s_box                        |Sbox_170                     |    24|
+|167   |    \sbox_loop[96].s_box                       |Sbox_171                     |    24|
+|168   |  \gen_rounds[4].round_key_inst                |roundkey_12                  |   640|
+|169   |    DUT                                        |DFF_128_153                  |   640|
+|170   |  \gen_rounds[4].shift_rows_inst               |shiftrows_13                 |   256|
+|171   |    DUT                                        |DFF_128_152                  |   256|
+|172   |  \gen_rounds[4].sub_bytes_inst                |subbytes_14                  |   512|
+|173   |    DUT                                        |DFF_128_135                  |   128|
+|174   |    \sbox_loop[0].s_box                        |Sbox_136                     |    24|
+|175   |    \sbox_loop[104].s_box                      |Sbox_137                     |    24|
+|176   |    \sbox_loop[112].s_box                      |Sbox_138                     |    24|
+|177   |    \sbox_loop[120].s_box                      |Sbox_139                     |    24|
+|178   |    \sbox_loop[16].s_box                       |Sbox_140                     |    24|
+|179   |    \sbox_loop[24].s_box                       |Sbox_141                     |    24|
+|180   |    \sbox_loop[32].s_box                       |Sbox_142                     |    24|
+|181   |    \sbox_loop[40].s_box                       |Sbox_143                     |    24|
+|182   |    \sbox_loop[48].s_box                       |Sbox_144                     |    24|
+|183   |    \sbox_loop[56].s_box                       |Sbox_145                     |    24|
+|184   |    \sbox_loop[64].s_box                       |Sbox_146                     |    24|
+|185   |    \sbox_loop[72].s_box                       |Sbox_147                     |    24|
+|186   |    \sbox_loop[80].s_box                       |Sbox_148                     |    24|
+|187   |    \sbox_loop[88].s_box                       |Sbox_149                     |    24|
+|188   |    \sbox_loop[8].s_box                        |Sbox_150                     |    24|
+|189   |    \sbox_loop[96].s_box                       |Sbox_151                     |    24|
+|190   |  \gen_rounds[5].round_key_inst                |roundkey_16                  |   640|
+|191   |    DUT                                        |DFF_128_133                  |   640|
+|192   |  \gen_rounds[5].shift_rows_inst               |shiftrows_17                 |   256|
+|193   |    DUT                                        |DFF_128_132                  |   256|
+|194   |  \gen_rounds[5].sub_bytes_inst                |subbytes_18                  |   512|
+|195   |    DUT                                        |DFF_128_115                  |   128|
+|196   |    \sbox_loop[0].s_box                        |Sbox_116                     |    24|
+|197   |    \sbox_loop[104].s_box                      |Sbox_117                     |    24|
+|198   |    \sbox_loop[112].s_box                      |Sbox_118                     |    24|
+|199   |    \sbox_loop[120].s_box                      |Sbox_119                     |    24|
+|200   |    \sbox_loop[16].s_box                       |Sbox_120                     |    24|
+|201   |    \sbox_loop[24].s_box                       |Sbox_121                     |    24|
+|202   |    \sbox_loop[32].s_box                       |Sbox_122                     |    24|
+|203   |    \sbox_loop[40].s_box                       |Sbox_123                     |    24|
+|204   |    \sbox_loop[48].s_box                       |Sbox_124                     |    24|
+|205   |    \sbox_loop[56].s_box                       |Sbox_125                     |    24|
+|206   |    \sbox_loop[64].s_box                       |Sbox_126                     |    24|
+|207   |    \sbox_loop[72].s_box                       |Sbox_127                     |    24|
+|208   |    \sbox_loop[80].s_box                       |Sbox_128                     |    24|
+|209   |    \sbox_loop[88].s_box                       |Sbox_129                     |    24|
+|210   |    \sbox_loop[8].s_box                        |Sbox_130                     |    24|
+|211   |    \sbox_loop[96].s_box                       |Sbox_131                     |    24|
+|212   |  \gen_rounds[6].round_key_inst                |roundkey_20                  |   640|
+|213   |    DUT                                        |DFF_128_113                  |   640|
+|214   |  \gen_rounds[6].shift_rows_inst               |shiftrows_21                 |   256|
+|215   |    DUT                                        |DFF_128_112                  |   256|
+|216   |  \gen_rounds[6].sub_bytes_inst                |subbytes_22                  |   512|
+|217   |    DUT                                        |DFF_128_95                   |   128|
+|218   |    \sbox_loop[0].s_box                        |Sbox_96                      |    24|
+|219   |    \sbox_loop[104].s_box                      |Sbox_97                      |    24|
+|220   |    \sbox_loop[112].s_box                      |Sbox_98                      |    24|
+|221   |    \sbox_loop[120].s_box                      |Sbox_99                      |    24|
+|222   |    \sbox_loop[16].s_box                       |Sbox_100                     |    24|
+|223   |    \sbox_loop[24].s_box                       |Sbox_101                     |    24|
+|224   |    \sbox_loop[32].s_box                       |Sbox_102                     |    24|
+|225   |    \sbox_loop[40].s_box                       |Sbox_103                     |    24|
+|226   |    \sbox_loop[48].s_box                       |Sbox_104                     |    24|
+|227   |    \sbox_loop[56].s_box                       |Sbox_105                     |    24|
+|228   |    \sbox_loop[64].s_box                       |Sbox_106                     |    24|
+|229   |    \sbox_loop[72].s_box                       |Sbox_107                     |    24|
+|230   |    \sbox_loop[80].s_box                       |Sbox_108                     |    24|
+|231   |    \sbox_loop[88].s_box                       |Sbox_109                     |    24|
+|232   |    \sbox_loop[8].s_box                        |Sbox_110                     |    24|
+|233   |    \sbox_loop[96].s_box                       |Sbox_111                     |    24|
+|234   |  \gen_rounds[7].round_key_inst                |roundkey_24                  |   640|
+|235   |    DUT                                        |DFF_128_93                   |   640|
+|236   |  \gen_rounds[7].shift_rows_inst               |shiftrows_25                 |   256|
+|237   |    DUT                                        |DFF_128_92                   |   256|
+|238   |  \gen_rounds[7].sub_bytes_inst                |subbytes_26                  |   512|
+|239   |    DUT                                        |DFF_128_75                   |   128|
+|240   |    \sbox_loop[0].s_box                        |Sbox_76                      |    24|
+|241   |    \sbox_loop[104].s_box                      |Sbox_77                      |    24|
+|242   |    \sbox_loop[112].s_box                      |Sbox_78                      |    24|
+|243   |    \sbox_loop[120].s_box                      |Sbox_79                      |    24|
+|244   |    \sbox_loop[16].s_box                       |Sbox_80                      |    24|
+|245   |    \sbox_loop[24].s_box                       |Sbox_81                      |    24|
+|246   |    \sbox_loop[32].s_box                       |Sbox_82                      |    24|
+|247   |    \sbox_loop[40].s_box                       |Sbox_83                      |    24|
+|248   |    \sbox_loop[48].s_box                       |Sbox_84                      |    24|
+|249   |    \sbox_loop[56].s_box                       |Sbox_85                      |    24|
+|250   |    \sbox_loop[64].s_box                       |Sbox_86                      |    24|
+|251   |    \sbox_loop[72].s_box                       |Sbox_87                      |    24|
+|252   |    \sbox_loop[80].s_box                       |Sbox_88                      |    24|
+|253   |    \sbox_loop[88].s_box                       |Sbox_89                      |    24|
+|254   |    \sbox_loop[8].s_box                        |Sbox_90                      |    24|
+|255   |    \sbox_loop[96].s_box                       |Sbox_91                      |    24|
+|256   |  \gen_rounds[8].round_key_inst                |roundkey_28                  |   640|
+|257   |    DUT                                        |DFF_128_73                   |   640|
+|258   |  \gen_rounds[8].shift_rows_inst               |shiftrows_29                 |   256|
+|259   |    DUT                                        |DFF_128_72                   |   256|
+|260   |  \gen_rounds[8].sub_bytes_inst                |subbytes_30                  |   512|
+|261   |    DUT                                        |DFF_128_55                   |   128|
+|262   |    \sbox_loop[0].s_box                        |Sbox_56                      |    24|
+|263   |    \sbox_loop[104].s_box                      |Sbox_57                      |    24|
+|264   |    \sbox_loop[112].s_box                      |Sbox_58                      |    24|
+|265   |    \sbox_loop[120].s_box                      |Sbox_59                      |    24|
+|266   |    \sbox_loop[16].s_box                       |Sbox_60                      |    24|
+|267   |    \sbox_loop[24].s_box                       |Sbox_61                      |    24|
+|268   |    \sbox_loop[32].s_box                       |Sbox_62                      |    24|
+|269   |    \sbox_loop[40].s_box                       |Sbox_63                      |    24|
+|270   |    \sbox_loop[48].s_box                       |Sbox_64                      |    24|
+|271   |    \sbox_loop[56].s_box                       |Sbox_65                      |    24|
+|272   |    \sbox_loop[64].s_box                       |Sbox_66                      |    24|
+|273   |    \sbox_loop[72].s_box                       |Sbox_67                      |    24|
+|274   |    \sbox_loop[80].s_box                       |Sbox_68                      |    24|
+|275   |    \sbox_loop[88].s_box                       |Sbox_69                      |    24|
+|276   |    \sbox_loop[8].s_box                        |Sbox_70                      |    24|
+|277   |    \sbox_loop[96].s_box                       |Sbox_71                      |    24|
+|278   |  \gen_rounds[9].round_key_inst                |roundkey_32                  |   640|
+|279   |    DUT                                        |DFF_128_53                   |   640|
+|280   |  \gen_rounds[9].shift_rows_inst               |shiftrows_33                 |   256|
+|281   |    DUT                                        |DFF_128_52                   |   256|
+|282   |  \gen_rounds[9].sub_bytes_inst                |subbytes_34                  |   512|
+|283   |    DUT                                        |DFF_128_36                   |   128|
+|284   |    \sbox_loop[0].s_box                        |Sbox                         |    24|
+|285   |    \sbox_loop[104].s_box                      |Sbox_37                      |    24|
+|286   |    \sbox_loop[112].s_box                      |Sbox_38                      |    24|
+|287   |    \sbox_loop[120].s_box                      |Sbox_39                      |    24|
+|288   |    \sbox_loop[16].s_box                       |Sbox_40                      |    24|
+|289   |    \sbox_loop[24].s_box                       |Sbox_41                      |    24|
+|290   |    \sbox_loop[32].s_box                       |Sbox_42                      |    24|
+|291   |    \sbox_loop[40].s_box                       |Sbox_43                      |    24|
+|292   |    \sbox_loop[48].s_box                       |Sbox_44                      |    24|
+|293   |    \sbox_loop[56].s_box                       |Sbox_45                      |    24|
+|294   |    \sbox_loop[64].s_box                       |Sbox_46                      |    24|
+|295   |    \sbox_loop[72].s_box                       |Sbox_47                      |    24|
+|296   |    \sbox_loop[80].s_box                       |Sbox_48                      |    24|
+|297   |    \sbox_loop[88].s_box                       |Sbox_49                      |    24|
+|298   |    \sbox_loop[8].s_box                        |Sbox_50                      |    24|
+|299   |    \sbox_loop[96].s_box                       |Sbox_51                      |    24|
+|300   |  initial_round_key_inst                       |roundkey_35                  |   768|
+|301   |    DUT                                        |DFF_128                      |   768|
++------+-----------------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:31 ; elapsed = 00:07:20 . Memory (MB): peak = 1122.727 ; gain = 783.195
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:19 ; elapsed = 00:04:55 . Memory (MB): peak = 1122.727 ; gain = 238.816
+Synthesis Optimization Complete : Time (s): cpu = 00:04:32 ; elapsed = 00:07:21 . Memory (MB): peak = 1122.727 ; gain = 783.195
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4994 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:00 ; elapsed = 00:08:02 . Memory (MB): peak = 1136.246 ; gain = 809.582
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hp/Desktop/AES_Project/AES_Vivado/AES_Vivado.runs/synth_1/AES_Encryption.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1136.246 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file AES_Encryption_utilization_synth.rpt -pb AES_Encryption_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1136.246 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Sep  7 19:24:06 2025...

@@ -1,0 +1,8 @@
+0 ../AES_Encryption.v
+1 ../DFF_128.v
+2 ../Sbox.v
+3 ../roundkey.v
+4 ../mixcolumns.v
+5 ../KeyExpansion.v
+6 ../subbytes.v
+7 ../shiftrows.v

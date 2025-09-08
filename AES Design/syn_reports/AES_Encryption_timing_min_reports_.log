@@ -1,0 +1,134 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : AES_Encryption
+Version: O-2018.06-SP1
+Date   : Mon Sep  8 11:05:50 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p8v25c   Library: saed14lvt_base_tt0p8v25c
+Wire Load Model Mode: top
+
+  Startpoint: key_in[97] (input port clocked by clk)
+  Endpoint: gen_key_expansion[1].key_exp_inst/DUT/Q_reg[97]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: INREG
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AES_Encryption     70000                 saed14lvt_base_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.10       0.10 f
+  key_in[97] (in)                                         0.00       0.10 f
+  gen_key_expansion[1].key_exp_inst/key_in[97] (KeyExpansion_01)
+                                                          0.00       0.10 f
+  gen_key_expansion[1].key_exp_inst/U74/X (SAEDLVT14_EO2_1)
+                                                          0.01       0.11 f
+  gen_key_expansion[1].key_exp_inst/DUT/D[97] (DFF_128_49)
+                                                          0.00       0.11 f
+  gen_key_expansion[1].key_exp_inst/DUT/Q_reg[97]/D (SAEDLVT14_FDPRBQ_V2_1)
+                                                          0.00       0.12 f
+  data arrival time                                                  0.12
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  gen_key_expansion[1].key_exp_inst/DUT/Q_reg[97]/CK (SAEDLVT14_FDPRBQ_V2_1)
+                                                          0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.12
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: gen_rounds[1].sub_bytes_inst/DUT/Q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gen_rounds[1].shift_rows_inst/DUT/Q_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: REG2REG
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AES_Encryption     70000                 saed14lvt_base_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  gen_rounds[1].sub_bytes_inst/DUT/Q_reg[0]/CK (SAEDLVT14_FDPRBQ_V2_1)
+                                                          0.00 #     0.00 r
+  gen_rounds[1].sub_bytes_inst/DUT/Q_reg[0]/Q (SAEDLVT14_FDPRBQ_V2_1)
+                                                          0.04       0.04 f
+  gen_rounds[1].sub_bytes_inst/DUT/Q[0] (DFF_128_39)      0.00       0.04 f
+  gen_rounds[1].sub_bytes_inst/b[0] (subbytes_0)          0.00       0.04 f
+  gen_rounds[1].shift_rows_inst/a[0] (shiftrows_0)        0.00       0.04 f
+  gen_rounds[1].shift_rows_inst/DUT/D[0] (DFF_128_38)     0.00       0.04 f
+  gen_rounds[1].shift_rows_inst/DUT/Q_reg[0]/D (SAEDLVT14_FDPRBQ_V2_1)
+                                                          0.00       0.04 f
+  data arrival time                                                  0.04
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  gen_rounds[1].shift_rows_inst/DUT/Q_reg[0]/CK (SAEDLVT14_FDPRBQ_V2_1)
+                                                          0.00       0.10 r
+  library hold time                                       0.01       0.11
+  data required time                                                 0.11
+  --------------------------------------------------------------------------
+  data required time                                                 0.11
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.07
+
+
+  Startpoint: gen_rounds[10].round_key_inst/DUT/Q_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: cipher_out[0]
+            (output port clocked by clk)
+  Path Group: REGOUT
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AES_Encryption     70000                 saed14lvt_base_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  gen_rounds[10].round_key_inst/DUT/Q_reg[0]/CK (SAEDLVT14_FDPRBQ_V2_1)
+                                                          0.00 #     0.00 r
+  gen_rounds[10].round_key_inst/DUT/Q_reg[0]/Q (SAEDLVT14_FDPRBQ_V2_1)
+                                                          0.03       0.03 r
+  gen_rounds[10].round_key_inst/DUT/Q[0] (DFF_128_1)      0.00       0.03 r
+  gen_rounds[10].round_key_inst/b[0] (roundkey_1)         0.00       0.03 r
+  cipher_out[0] (out)                                     0.00       0.03 r
+  data arrival time                                                  0.03
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  output external delay                                  -0.10       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.03
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+1

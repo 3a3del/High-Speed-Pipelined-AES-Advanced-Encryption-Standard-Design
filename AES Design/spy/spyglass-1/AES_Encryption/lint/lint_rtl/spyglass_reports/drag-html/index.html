@@ -1,0 +1,91 @@
+<html>
+            <title>SpyGlass DRAG  Report</title>
+            <head>
+            <title>SpyGlass DRAG  Report</title>
+            <link rel="stylesheet" type="text/css" href="mgmt.css" >
+            <script language="JavaScript">
+            function showhide(id)
+            {
+            var x = document.getElementById(id);
+            if(x.style.display == "none")
+            {
+            x.style.display="";
+            }
+            else
+            {
+            x.style.display="none";//hide.
+            }
+            }
+            </script>
+            </head>
+            <body>
+            <table width="100%">
+            <tr>
+            <td width="50%" valign="top">
+            <div style="padding-left:10px;"><br>
+            <b><u>SpyGlass DRAG  Report</u></b><br>
+            <img src="images/atrenta_small_logo.gif"><br><br>
+            <b>DRAG (Design Risk Assessment Grade) REPORT:</b><br>
+<b>DRAG Factor = (Detection DRAG factor + Correction DRAG factor) * #Design Units affected </b><br><br>
+<b>DRAG report source:</b><br>   /home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/auxi/DRAG-data.csv<br><br>
+<b>DRAG Factor mapping values:</b><br>
+   H(High)    : 1<br>
+   M(Medium)  : 0.5<br>
+   L(Low)     : 0.1<br><br>
+<b>DRAG Factor definitions:</b><br>
+   Detection DRAG Factor :- Resource required to detect the problem in conventional method if not known early<br>
+   Correction DRAG Factor:- Resource required to correct the problem<br><br>
+Total DRAG Factor measured in the analysis = <b>0</b><br><br>
+<style type="text/css">
+        table.drag_table {
+            border-width: medium;
+            border-spacing: ;
+            border-style: groove;
+            border-color: gray;
+            border-collapse: separate;
+            background-color: white;
+        }
+        table.drag_table th {
+            font-size: 15px;
+            border-width: 2px;
+            padding: 2px;
+            border-style: ridge;
+            border-color: gray;
+            background-color:#CCCCCC;
+            -moz-border-radius: ;
+        }
+        table.drag_table td {
+            font-size: 13px;
+            border-width: 1px;
+            padding: 2px;
+            border-style: ridge;
+            border-color: gray;
+            background-color: white;
+            -moz-border-radius: ;
+        }
+        </style><table class="drag_table">
+<tr align='left'>
+<th>Rule</th><th>Rule Help</th><th style="width:40px">Detection DRAG Factor</th><th style="width:40px">Correction DRAG Factor</th><th style="width:40px">#Design Units affected</th><th style="width:40px">DRAG Factor</th><th>#Messages</th><th>Design Impact</th>
+</tr>
+<tr> <td></td><td></td><td></td><td></td><td>Total</td><td>0</td><td></td><td></td> </tr>
+</table><br>
+<b>Design Impact Abbreviations:</b>
+<table class="drag_table">
+<tr align='left'>
+<th style="width:100px">Design Impact</th><th>Short Description</th>
+</tr>
+<tr> <td>FUNCTIONALITY</td><td >An issue, if not corrected would cause incorrect, unpredictable or ambiguous functional behavior of the silicon </td> </tr>
+<tr> <td>RELIABILITY</td><td >An issue, if not corrected can cause permanent or intermittent failures of the chip</td> </tr>
+<tr> <td>TESTABILITY</td><td >An issue, if not corrected would hamper the testability of the design (on the tester or in-situ operation)</td> </tr>
+<tr> <td>POWER_EFFICIENCY</td><td>An issue, if not corrected can lead to power-inefficient design </td> </tr>
+<tr><td>PHYSICAL_DESIGN</td><td >Issues, if not corrected could cause problems in PACT closure ( Performance, Area, Congestion and/or Timing) leading to schedule delays or sub-optimal chip</td> </tr>
+<tr> <td>TIMING_CLOSURE</td><td >Any aspect of RTL design that would impact or hinder timing closure in physical design</td> </tr>
+<tr> <td>SIMULATION</td><td >An issue, if not corrected could cause simulation hangs, inconsistent behavior across simulators, unpredictable results or simulation-synthesis mismatches</td> </tr>
+<tr> <td>SYNTHESIS</td><td >An issue, if not corrected could cause synthesis hangs, unpredictable synthesis and inconsistent synthesis across industry standard synthesis tools</td> </tr>
+<tr> <td>STA</td><td >An issue, if not corrected, could cause static timing analysis problems</td> </tr>
+<tr> <td>ATPG</td><td >Any aspect of RTL design that could impact smooth running of ATPG tools and possibly testability of a design</td> </tr>
+<tr> <td>EMULATION</td><td >Reserved for future Use </td> </tr>
+<tr> <td>STYLE</td><td >Non-conformance to prescribed coding styles in the company</td> </tr>
+<tr> <td>REUSE</td><td >An issue which could make design un-portable or un-reusable across multiple technology nodes or tool flows</td> </tr></table><br>
+<b>Note1:</b>Some of the rules do not have DRAG scores associated with them and are not included in the DRAG measurements. For example, information rules may not have specific design impact and custom rules may not have DRAG factors associated to them. DRAG factor and design impact data can be added/edited and the changes will reflect in the DRAG report results as per the user need<br>
+<br><br></div></body></html>

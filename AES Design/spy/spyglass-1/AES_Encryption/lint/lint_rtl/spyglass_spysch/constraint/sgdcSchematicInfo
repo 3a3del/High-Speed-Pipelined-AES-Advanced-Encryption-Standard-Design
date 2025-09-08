@@ -1,0 +1,10 @@
+##Header_Start
+##Spyglass_Version:SpyGlass_vL-2016.06
+##Header_End
+
+##File_ID::1
+
+##File_Name::./spyglass-1/spyglass-1_adc_file.adc@@Design_Unit::AES_Encryption
+##Pattern::rst_n@@Line_no::1@@Delim::%@@%AES_Encryption.rst_n%
+##Line_no::1@@port@@AES_Encryption.rst_n
+

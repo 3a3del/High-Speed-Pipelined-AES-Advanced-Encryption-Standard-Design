@@ -1,0 +1,573 @@
+ 
+****************************************
+Report : area
+Design : AES_Encryption
+Version: O-2018.06-SP1
+Date   : Mon Sep  8 11:05:52 2025
+****************************************
+
+Library(s) Used:
+
+    saed14lvt_base_tt0p8v25c (File: /home/ICer/PDK/SAED14_EDK/SAED14nm_EDK_STD_LVT/liberty/nldm/base/saed14lvt_base_tt0p8v25c.db)
+
+Number of ports:                        30794
+Number of nets:                        146671
+Number of cells:                       116305
+Number of combinational cells:         109605
+Number of sequential cells:              6400
+Number of macros/black boxes:               0
+Number of buf/inv:                      24109
+Number of references:                      51
+
+Combinational area:              32694.561832
+Buf/Inv area:                     5652.652913
+Noncombinational area:            6819.840240
+Macro/Black Box area:                0.000000
+Net Interconnect area:           84371.784070
+
+Total cell area:                 39514.402073
+Total area:                     123886.186142
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------------
+AES_Encryption                    39514.4021    100.0      2.1312     0.0000  0.0000  AES_Encryption
+gen_key_expansion[10].key_exp_inst
+                                    787.5672      2.0     49.9944     0.0000  0.0000  KeyExpansion_36
+gen_key_expansion[10].key_exp_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_40
+gen_key_expansion[10].key_exp_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_164
+gen_key_expansion[10].key_exp_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_162
+gen_key_expansion[10].key_exp_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_161
+gen_key_expansion[10].key_exp_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_163
+gen_key_expansion[1].key_exp_inst   788.1000      2.0     47.8632     0.0000  0.0000  KeyExpansion_01
+gen_key_expansion[1].key_exp_inst/DUT
+                                    145.4544      0.4      9.0576   136.3968  0.0000  DFF_128_49
+gen_key_expansion[1].key_exp_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_0
+gen_key_expansion[1].key_exp_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_198
+gen_key_expansion[1].key_exp_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_197
+gen_key_expansion[1].key_exp_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_199
+gen_key_expansion[2].key_exp_inst   784.3704      2.0     47.8632     0.0000  0.0000  KeyExpansion_02
+gen_key_expansion[2].key_exp_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_48
+gen_key_expansion[2].key_exp_inst/sbox_loop[0].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_196
+gen_key_expansion[2].key_exp_inst/sbox_loop[16].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_194
+gen_key_expansion[2].key_exp_inst/sbox_loop[24].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_193
+gen_key_expansion[2].key_exp_inst/sbox_loop[8].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_195
+gen_key_expansion[3].key_exp_inst   784.3704      2.0     47.8632     0.0000  0.0000  KeyExpansion_04
+gen_key_expansion[3].key_exp_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_47
+gen_key_expansion[3].key_exp_inst/sbox_loop[0].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_192
+gen_key_expansion[3].key_exp_inst/sbox_loop[16].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_190
+gen_key_expansion[3].key_exp_inst/sbox_loop[24].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_189
+gen_key_expansion[3].key_exp_inst/sbox_loop[8].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_191
+gen_key_expansion[4].key_exp_inst   783.3048      2.0     47.8632     0.0000  0.0000  KeyExpansion_08
+gen_key_expansion[4].key_exp_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_46
+gen_key_expansion[4].key_exp_inst/sbox_loop[0].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_188
+gen_key_expansion[4].key_exp_inst/sbox_loop[16].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_186
+gen_key_expansion[4].key_exp_inst/sbox_loop[24].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_185
+gen_key_expansion[4].key_exp_inst/sbox_loop[8].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_187
+gen_key_expansion[5].key_exp_inst   784.3704      2.0     47.8632     0.0000  0.0000  KeyExpansion_10
+gen_key_expansion[5].key_exp_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_45
+gen_key_expansion[5].key_exp_inst/sbox_loop[0].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_184
+gen_key_expansion[5].key_exp_inst/sbox_loop[16].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_182
+gen_key_expansion[5].key_exp_inst/sbox_loop[24].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_181
+gen_key_expansion[5].key_exp_inst/sbox_loop[8].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_183
+gen_key_expansion[6].key_exp_inst   784.3704      2.0     47.8632     0.0000  0.0000  KeyExpansion_20
+gen_key_expansion[6].key_exp_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_44
+gen_key_expansion[6].key_exp_inst/sbox_loop[0].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_180
+gen_key_expansion[6].key_exp_inst/sbox_loop[16].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_178
+gen_key_expansion[6].key_exp_inst/sbox_loop[24].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_177
+gen_key_expansion[6].key_exp_inst/sbox_loop[8].s_box
+                                    148.4292      0.4    148.4292     0.0000  0.0000  Sbox_179
+gen_key_expansion[7].key_exp_inst   783.3048      2.0     47.8632     0.0000  0.0000  KeyExpansion_40
+gen_key_expansion[7].key_exp_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_43
+gen_key_expansion[7].key_exp_inst/sbox_loop[0].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_176
+gen_key_expansion[7].key_exp_inst/sbox_loop[16].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_174
+gen_key_expansion[7].key_exp_inst/sbox_loop[24].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_173
+gen_key_expansion[7].key_exp_inst/sbox_loop[8].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_175
+gen_key_expansion[8].key_exp_inst   783.3048      2.0     47.8632     0.0000  0.0000  KeyExpansion_80
+gen_key_expansion[8].key_exp_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_42
+gen_key_expansion[8].key_exp_inst/sbox_loop[0].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_172
+gen_key_expansion[8].key_exp_inst/sbox_loop[16].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_170
+gen_key_expansion[8].key_exp_inst/sbox_loop[24].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_169
+gen_key_expansion[8].key_exp_inst/sbox_loop[8].s_box
+                                    148.1628      0.4    148.1628     0.0000  0.0000  Sbox_171
+gen_key_expansion[9].key_exp_inst   787.5672      2.0     49.9944     0.0000  0.0000  KeyExpansion_1b
+gen_key_expansion[9].key_exp_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_41
+gen_key_expansion[9].key_exp_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_168
+gen_key_expansion[9].key_exp_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_166
+gen_key_expansion[9].key_exp_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_165
+gen_key_expansion[9].key_exp_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_167
+gen_rounds[10].round_key_inst       205.5720      0.5     62.7816     0.0000  0.0000  roundkey_1
+gen_rounds[10].round_key_inst/DUT   142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_1
+gen_rounds[10].shift_rows_inst      143.0568      0.4      0.2664     0.0000  0.0000  shiftrows_1
+gen_rounds[10].shift_rows_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_2
+gen_rounds[10].sub_bytes_inst      2522.1864      6.4      0.2664     0.0000  0.0000  subbytes_1
+gen_rounds[10].sub_bytes_inst/DUT   142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_3
+gen_rounds[10].sub_bytes_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_16
+gen_rounds[10].sub_bytes_inst/sbox_loop[104].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_3
+gen_rounds[10].sub_bytes_inst/sbox_loop[112].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_2
+gen_rounds[10].sub_bytes_inst/sbox_loop[120].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_1
+gen_rounds[10].sub_bytes_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_14
+gen_rounds[10].sub_bytes_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_13
+gen_rounds[10].sub_bytes_inst/sbox_loop[32].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_12
+gen_rounds[10].sub_bytes_inst/sbox_loop[40].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_11
+gen_rounds[10].sub_bytes_inst/sbox_loop[48].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_10
+gen_rounds[10].sub_bytes_inst/sbox_loop[56].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_9
+gen_rounds[10].sub_bytes_inst/sbox_loop[64].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_8
+gen_rounds[10].sub_bytes_inst/sbox_loop[72].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_7
+gen_rounds[10].sub_bytes_inst/sbox_loop[80].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_6
+gen_rounds[10].sub_bytes_inst/sbox_loop[88].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_5
+gen_rounds[10].sub_bytes_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_15
+gen_rounds[10].sub_bytes_inst/sbox_loop[96].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_4
+gen_rounds[1].gen_mixcols.mix_columns_inst
+                                    305.0280      0.8    162.2376     0.0000  0.0000  mixcolumns_0
+gen_rounds[1].gen_mixcols.mix_columns_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_37
+gen_rounds[1].round_key_inst        205.5720      0.5     62.7816     0.0000  0.0000  roundkey_10
+gen_rounds[1].round_key_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_36
+gen_rounds[1].shift_rows_inst       143.0568      0.4      0.2664     0.0000  0.0000  shiftrows_0
+gen_rounds[1].shift_rows_inst/DUT   142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_38
+gen_rounds[1].sub_bytes_inst       2522.1864      6.4      0.2664     0.0000  0.0000  subbytes_0
+gen_rounds[1].sub_bytes_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_39
+gen_rounds[1].sub_bytes_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_160
+gen_rounds[1].sub_bytes_inst/sbox_loop[104].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_147
+gen_rounds[1].sub_bytes_inst/sbox_loop[112].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_146
+gen_rounds[1].sub_bytes_inst/sbox_loop[120].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_145
+gen_rounds[1].sub_bytes_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_158
+gen_rounds[1].sub_bytes_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_157
+gen_rounds[1].sub_bytes_inst/sbox_loop[32].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_156
+gen_rounds[1].sub_bytes_inst/sbox_loop[40].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_155
+gen_rounds[1].sub_bytes_inst/sbox_loop[48].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_154
+gen_rounds[1].sub_bytes_inst/sbox_loop[56].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_153
+gen_rounds[1].sub_bytes_inst/sbox_loop[64].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_152
+gen_rounds[1].sub_bytes_inst/sbox_loop[72].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_151
+gen_rounds[1].sub_bytes_inst/sbox_loop[80].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_150
+gen_rounds[1].sub_bytes_inst/sbox_loop[88].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_149
+gen_rounds[1].sub_bytes_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_159
+gen_rounds[1].sub_bytes_inst/sbox_loop[96].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_148
+gen_rounds[2].gen_mixcols.mix_columns_inst
+                                    305.0280      0.8    162.2376     0.0000  0.0000  mixcolumns_8
+gen_rounds[2].gen_mixcols.mix_columns_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_33
+gen_rounds[2].round_key_inst        205.5720      0.5     62.7816     0.0000  0.0000  roundkey_9
+gen_rounds[2].round_key_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_32
+gen_rounds[2].shift_rows_inst       143.0568      0.4      0.2664     0.0000  0.0000  shiftrows_9
+gen_rounds[2].shift_rows_inst/DUT   142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_34
+gen_rounds[2].sub_bytes_inst       2522.1864      6.4      0.2664     0.0000  0.0000  subbytes_9
+gen_rounds[2].sub_bytes_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_35
+gen_rounds[2].sub_bytes_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_144
+gen_rounds[2].sub_bytes_inst/sbox_loop[104].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_131
+gen_rounds[2].sub_bytes_inst/sbox_loop[112].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_130
+gen_rounds[2].sub_bytes_inst/sbox_loop[120].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_129
+gen_rounds[2].sub_bytes_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_142
+gen_rounds[2].sub_bytes_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_141
+gen_rounds[2].sub_bytes_inst/sbox_loop[32].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_140
+gen_rounds[2].sub_bytes_inst/sbox_loop[40].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_139
+gen_rounds[2].sub_bytes_inst/sbox_loop[48].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_138
+gen_rounds[2].sub_bytes_inst/sbox_loop[56].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_137
+gen_rounds[2].sub_bytes_inst/sbox_loop[64].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_136
+gen_rounds[2].sub_bytes_inst/sbox_loop[72].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_135
+gen_rounds[2].sub_bytes_inst/sbox_loop[80].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_134
+gen_rounds[2].sub_bytes_inst/sbox_loop[88].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_133
+gen_rounds[2].sub_bytes_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_143
+gen_rounds[2].sub_bytes_inst/sbox_loop[96].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_132
+gen_rounds[3].gen_mixcols.mix_columns_inst
+                                    305.0280      0.8    162.2376     0.0000  0.0000  mixcolumns_7
+gen_rounds[3].gen_mixcols.mix_columns_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_29
+gen_rounds[3].round_key_inst        205.5720      0.5     62.7816     0.0000  0.0000  roundkey_8
+gen_rounds[3].round_key_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_28
+gen_rounds[3].shift_rows_inst       143.0568      0.4      0.2664     0.0000  0.0000  shiftrows_8
+gen_rounds[3].shift_rows_inst/DUT   142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_30
+gen_rounds[3].sub_bytes_inst       2522.1864      6.4      0.2664     0.0000  0.0000  subbytes_8
+gen_rounds[3].sub_bytes_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_31
+gen_rounds[3].sub_bytes_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_128
+gen_rounds[3].sub_bytes_inst/sbox_loop[104].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_115
+gen_rounds[3].sub_bytes_inst/sbox_loop[112].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_114
+gen_rounds[3].sub_bytes_inst/sbox_loop[120].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_113
+gen_rounds[3].sub_bytes_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_126
+gen_rounds[3].sub_bytes_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_125
+gen_rounds[3].sub_bytes_inst/sbox_loop[32].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_124
+gen_rounds[3].sub_bytes_inst/sbox_loop[40].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_123
+gen_rounds[3].sub_bytes_inst/sbox_loop[48].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_122
+gen_rounds[3].sub_bytes_inst/sbox_loop[56].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_121
+gen_rounds[3].sub_bytes_inst/sbox_loop[64].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_120
+gen_rounds[3].sub_bytes_inst/sbox_loop[72].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_119
+gen_rounds[3].sub_bytes_inst/sbox_loop[80].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_118
+gen_rounds[3].sub_bytes_inst/sbox_loop[88].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_117
+gen_rounds[3].sub_bytes_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_127
+gen_rounds[3].sub_bytes_inst/sbox_loop[96].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_116
+gen_rounds[4].gen_mixcols.mix_columns_inst
+                                    305.0280      0.8    162.2376     0.0000  0.0000  mixcolumns_6
+gen_rounds[4].gen_mixcols.mix_columns_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_25
+gen_rounds[4].round_key_inst        205.5720      0.5     62.7816     0.0000  0.0000  roundkey_7
+gen_rounds[4].round_key_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_24
+gen_rounds[4].shift_rows_inst       143.0568      0.4      0.2664     0.0000  0.0000  shiftrows_7
+gen_rounds[4].shift_rows_inst/DUT   142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_26
+gen_rounds[4].sub_bytes_inst       2522.1864      6.4      0.2664     0.0000  0.0000  subbytes_7
+gen_rounds[4].sub_bytes_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_27
+gen_rounds[4].sub_bytes_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_112
+gen_rounds[4].sub_bytes_inst/sbox_loop[104].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_99
+gen_rounds[4].sub_bytes_inst/sbox_loop[112].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_98
+gen_rounds[4].sub_bytes_inst/sbox_loop[120].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_97
+gen_rounds[4].sub_bytes_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_110
+gen_rounds[4].sub_bytes_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_109
+gen_rounds[4].sub_bytes_inst/sbox_loop[32].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_108
+gen_rounds[4].sub_bytes_inst/sbox_loop[40].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_107
+gen_rounds[4].sub_bytes_inst/sbox_loop[48].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_106
+gen_rounds[4].sub_bytes_inst/sbox_loop[56].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_105
+gen_rounds[4].sub_bytes_inst/sbox_loop[64].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_104
+gen_rounds[4].sub_bytes_inst/sbox_loop[72].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_103
+gen_rounds[4].sub_bytes_inst/sbox_loop[80].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_102
+gen_rounds[4].sub_bytes_inst/sbox_loop[88].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_101
+gen_rounds[4].sub_bytes_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_111
+gen_rounds[4].sub_bytes_inst/sbox_loop[96].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_100
+gen_rounds[5].gen_mixcols.mix_columns_inst
+                                    305.0280      0.8    162.2376     0.0000  0.0000  mixcolumns_5
+gen_rounds[5].gen_mixcols.mix_columns_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_21
+gen_rounds[5].round_key_inst        205.5720      0.5     62.7816     0.0000  0.0000  roundkey_6
+gen_rounds[5].round_key_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_20
+gen_rounds[5].shift_rows_inst       143.0568      0.4      0.2664     0.0000  0.0000  shiftrows_6
+gen_rounds[5].shift_rows_inst/DUT   142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_22
+gen_rounds[5].sub_bytes_inst       2522.1864      6.4      0.2664     0.0000  0.0000  subbytes_6
+gen_rounds[5].sub_bytes_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_23
+gen_rounds[5].sub_bytes_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_96
+gen_rounds[5].sub_bytes_inst/sbox_loop[104].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_83
+gen_rounds[5].sub_bytes_inst/sbox_loop[112].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_82
+gen_rounds[5].sub_bytes_inst/sbox_loop[120].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_81
+gen_rounds[5].sub_bytes_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_94
+gen_rounds[5].sub_bytes_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_93
+gen_rounds[5].sub_bytes_inst/sbox_loop[32].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_92
+gen_rounds[5].sub_bytes_inst/sbox_loop[40].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_91
+gen_rounds[5].sub_bytes_inst/sbox_loop[48].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_90
+gen_rounds[5].sub_bytes_inst/sbox_loop[56].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_89
+gen_rounds[5].sub_bytes_inst/sbox_loop[64].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_88
+gen_rounds[5].sub_bytes_inst/sbox_loop[72].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_87
+gen_rounds[5].sub_bytes_inst/sbox_loop[80].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_86
+gen_rounds[5].sub_bytes_inst/sbox_loop[88].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_85
+gen_rounds[5].sub_bytes_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_95
+gen_rounds[5].sub_bytes_inst/sbox_loop[96].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_84
+gen_rounds[6].gen_mixcols.mix_columns_inst
+                                    305.0280      0.8    162.2376     0.0000  0.0000  mixcolumns_4
+gen_rounds[6].gen_mixcols.mix_columns_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_17
+gen_rounds[6].round_key_inst        205.5720      0.5     62.7816     0.0000  0.0000  roundkey_5
+gen_rounds[6].round_key_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_16
+gen_rounds[6].shift_rows_inst       143.0568      0.4      0.2664     0.0000  0.0000  shiftrows_5
+gen_rounds[6].shift_rows_inst/DUT   142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_18
+gen_rounds[6].sub_bytes_inst       2522.1864      6.4      0.2664     0.0000  0.0000  subbytes_5
+gen_rounds[6].sub_bytes_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_19
+gen_rounds[6].sub_bytes_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_80
+gen_rounds[6].sub_bytes_inst/sbox_loop[104].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_67
+gen_rounds[6].sub_bytes_inst/sbox_loop[112].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_66
+gen_rounds[6].sub_bytes_inst/sbox_loop[120].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_65
+gen_rounds[6].sub_bytes_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_78
+gen_rounds[6].sub_bytes_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_77
+gen_rounds[6].sub_bytes_inst/sbox_loop[32].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_76
+gen_rounds[6].sub_bytes_inst/sbox_loop[40].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_75
+gen_rounds[6].sub_bytes_inst/sbox_loop[48].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_74
+gen_rounds[6].sub_bytes_inst/sbox_loop[56].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_73
+gen_rounds[6].sub_bytes_inst/sbox_loop[64].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_72
+gen_rounds[6].sub_bytes_inst/sbox_loop[72].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_71
+gen_rounds[6].sub_bytes_inst/sbox_loop[80].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_70
+gen_rounds[6].sub_bytes_inst/sbox_loop[88].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_69
+gen_rounds[6].sub_bytes_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_79
+gen_rounds[6].sub_bytes_inst/sbox_loop[96].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_68
+gen_rounds[7].gen_mixcols.mix_columns_inst
+                                    305.0280      0.8    162.2376     0.0000  0.0000  mixcolumns_3
+gen_rounds[7].gen_mixcols.mix_columns_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_13
+gen_rounds[7].round_key_inst        205.5720      0.5     62.7816     0.0000  0.0000  roundkey_4
+gen_rounds[7].round_key_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_12
+gen_rounds[7].shift_rows_inst       143.0568      0.4      0.2664     0.0000  0.0000  shiftrows_4
+gen_rounds[7].shift_rows_inst/DUT   142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_14
+gen_rounds[7].sub_bytes_inst       2522.1864      6.4      0.2664     0.0000  0.0000  subbytes_4
+gen_rounds[7].sub_bytes_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_15
+gen_rounds[7].sub_bytes_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_64
+gen_rounds[7].sub_bytes_inst/sbox_loop[104].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_51
+gen_rounds[7].sub_bytes_inst/sbox_loop[112].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_50
+gen_rounds[7].sub_bytes_inst/sbox_loop[120].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_49
+gen_rounds[7].sub_bytes_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_62
+gen_rounds[7].sub_bytes_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_61
+gen_rounds[7].sub_bytes_inst/sbox_loop[32].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_60
+gen_rounds[7].sub_bytes_inst/sbox_loop[40].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_59
+gen_rounds[7].sub_bytes_inst/sbox_loop[48].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_58
+gen_rounds[7].sub_bytes_inst/sbox_loop[56].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_57
+gen_rounds[7].sub_bytes_inst/sbox_loop[64].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_56
+gen_rounds[7].sub_bytes_inst/sbox_loop[72].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_55
+gen_rounds[7].sub_bytes_inst/sbox_loop[80].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_54
+gen_rounds[7].sub_bytes_inst/sbox_loop[88].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_53
+gen_rounds[7].sub_bytes_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_63
+gen_rounds[7].sub_bytes_inst/sbox_loop[96].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_52
+gen_rounds[8].gen_mixcols.mix_columns_inst
+                                    305.0280      0.8    162.2376     0.0000  0.0000  mixcolumns_2
+gen_rounds[8].gen_mixcols.mix_columns_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_9
+gen_rounds[8].round_key_inst        205.5720      0.5     62.7816     0.0000  0.0000  roundkey_3
+gen_rounds[8].round_key_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_8
+gen_rounds[8].shift_rows_inst       143.0568      0.4      0.2664     0.0000  0.0000  shiftrows_3
+gen_rounds[8].shift_rows_inst/DUT   142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_10
+gen_rounds[8].sub_bytes_inst       2522.1864      6.4      0.2664     0.0000  0.0000  subbytes_3
+gen_rounds[8].sub_bytes_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_11
+gen_rounds[8].sub_bytes_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_48
+gen_rounds[8].sub_bytes_inst/sbox_loop[104].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_35
+gen_rounds[8].sub_bytes_inst/sbox_loop[112].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_34
+gen_rounds[8].sub_bytes_inst/sbox_loop[120].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_33
+gen_rounds[8].sub_bytes_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_46
+gen_rounds[8].sub_bytes_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_45
+gen_rounds[8].sub_bytes_inst/sbox_loop[32].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_44
+gen_rounds[8].sub_bytes_inst/sbox_loop[40].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_43
+gen_rounds[8].sub_bytes_inst/sbox_loop[48].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_42
+gen_rounds[8].sub_bytes_inst/sbox_loop[56].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_41
+gen_rounds[8].sub_bytes_inst/sbox_loop[64].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_40
+gen_rounds[8].sub_bytes_inst/sbox_loop[72].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_39
+gen_rounds[8].sub_bytes_inst/sbox_loop[80].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_38
+gen_rounds[8].sub_bytes_inst/sbox_loop[88].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_37
+gen_rounds[8].sub_bytes_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_47
+gen_rounds[8].sub_bytes_inst/sbox_loop[96].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_36
+gen_rounds[9].gen_mixcols.mix_columns_inst
+                                    305.0280      0.8    162.2376     0.0000  0.0000  mixcolumns_1
+gen_rounds[9].gen_mixcols.mix_columns_inst/DUT
+                                    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_5
+gen_rounds[9].round_key_inst        205.5720      0.5     62.7816     0.0000  0.0000  roundkey_2
+gen_rounds[9].round_key_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_4
+gen_rounds[9].shift_rows_inst       143.0568      0.4      0.2664     0.0000  0.0000  shiftrows_2
+gen_rounds[9].shift_rows_inst/DUT   142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_6
+gen_rounds[9].sub_bytes_inst       2522.1864      6.4      0.2664     0.0000  0.0000  subbytes_2
+gen_rounds[9].sub_bytes_inst/DUT    142.7904      0.4      6.3936   136.3968  0.0000  DFF_128_7
+gen_rounds[9].sub_bytes_inst/sbox_loop[0].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_32
+gen_rounds[9].sub_bytes_inst/sbox_loop[104].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_19
+gen_rounds[9].sub_bytes_inst/sbox_loop[112].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_18
+gen_rounds[9].sub_bytes_inst/sbox_loop[120].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_17
+gen_rounds[9].sub_bytes_inst/sbox_loop[16].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_30
+gen_rounds[9].sub_bytes_inst/sbox_loop[24].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_29
+gen_rounds[9].sub_bytes_inst/sbox_loop[32].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_28
+gen_rounds[9].sub_bytes_inst/sbox_loop[40].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_27
+gen_rounds[9].sub_bytes_inst/sbox_loop[48].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_26
+gen_rounds[9].sub_bytes_inst/sbox_loop[56].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_25
+gen_rounds[9].sub_bytes_inst/sbox_loop[64].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_24
+gen_rounds[9].sub_bytes_inst/sbox_loop[72].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_23
+gen_rounds[9].sub_bytes_inst/sbox_loop[80].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_22
+gen_rounds[9].sub_bytes_inst/sbox_loop[88].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_21
+gen_rounds[9].sub_bytes_inst/sbox_loop[8].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_31
+gen_rounds[9].sub_bytes_inst/sbox_loop[96].s_box
+                                    148.6956      0.4    148.6956     0.0000  0.0000  Sbox_20
+initial_round_key_inst              208.2360      0.5     62.7816     0.0000  0.0000  roundkey_0
+initial_round_key_inst/DUT          145.4544      0.4      9.0576   136.3968  0.0000  DFF_128_0
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------------
+Total                                                  32694.5618  6819.8402  0.0000
+
+1

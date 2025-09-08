@@ -1,0 +1,84 @@
+#!SPYGLASS_PROJECT_FILE
+#!VERSION 3.0
+#  -------------------------------------------------------------------
+#  This is a software generated project file. Manual edits to this file could be lost during the next save operation
+#  Copyright Synopsys Inc.
+#  Last Updated By: SpyGlass SpyGlass_vL-2016.06
+#  Last Updated On Mon Sep  8 08:48:54 2025
+#
+#  -------------------------------------------------------------------
+
+##Data Import Section
+
+read_file -type verilog ../AES_Encryption.v
+read_file -type verilog ../DFF_128.v
+read_file -type verilog ../Sbox.v
+read_file -type verilog ../roundkey.v
+read_file -type verilog ../mixcolumns.v
+read_file -type verilog ../KeyExpansion.v
+read_file -type verilog ../subbytes.v
+read_file -type verilog ../shiftrows.v
+read_file -type adc ./spyglass-1/spyglass-1_adc_file.adc
+
+##Common Options Section
+
+set_option projectwdir .
+set_option language_mode mixed
+set_option designread_enable_synthesis yes
+set_option designread_disable_flatten no
+set_option top AES_Encryption
+set_option enableSV yes
+set_option report_incr_messages yes
+set_option active_methodology $SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff
+
+
+##Goal Setup Section
+
+current_methodology $SPYGLASS_HOME/GuideWare/latest/block/rtl_handoff
+
+
+current_goal lint/lint_rtl -top AES_Encryption
+read_file -type awl ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/AES_Encryption/lint/lint_rtl/spyglass-1_waiver_file.awl
+set_goal_option report_incr_messages no
+set_goal_option report { elab_summary ignore_summary stop_summary spyglass_violations sign_off_sevlabel sign_off moresimple_filesort moresimple_rulesort waiver inline summary_sevlabel summary count score moresimple_turbo moresimple_sevclass no_msg_reporting_rules drag moresimple simple RptSimLoop01 LDHist }
+set_parameter reportLibLatch yes
+set_parameter reportHangingLatch yes
+set_parameter report_all_messages yes
+set_parameter report_all_rst yes
+set_parameter report_floating_source yes
+set_parameter write_sdc yes
+set_parameter waiver_compat yes
+set_parameter rme_eco_flow on
+set_parameter rme_generate_design_database_report on
+set_parameter reportconstassign yes
+set_parameter reportsimilarassgn yes
+set_parameter checkblocking yes
+set_parameter check_xassign_casedefault yes
+set_parameter check_temporary_flop yes
+set_parameter check_latch yes
+set_parameter check_initialization_assignment yes
+set_parameter check_sequential yes
+
+
+current_goal lint/lint_turbo_rtl -top AES_Encryption
+set_parameter write_sdc yes
+set_parameter rme_generate_design_database_report on
+set_parameter rme_eco_flow on
+set_parameter reportalwayslatch yes
+set_parameter reportconstassign yes
+set_parameter reportsimilarassgn yes
+set_parameter report_floating_source yes
+set_parameter report_flop_clock_loop yes
+set_parameter report_flop_reset_loop yes
+set_parameter reportLibLatch yes
+set_parameter report_all_rst yes
+set_parameter report_allclk yes
+set_parameter report_all_messages yes
+set_parameter checkblocking yes
+set_parameter checknonblocking yes
+set_parameter check_temporary_flop yes
+set_parameter check_xassign_casedefault yes
+set_parameter check_sequential yes
+set_parameter check_latch yes
+

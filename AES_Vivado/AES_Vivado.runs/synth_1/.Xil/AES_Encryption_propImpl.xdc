@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/hp/Desktop/AES_Project/AES_Vivado/AES_Vivado.srcs/constrs_1/new/cons.xdc rfile:../../../AES_Vivado.srcs/constrs_1/new/cons.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
+set_clock_uncertainty -setup 0.100 [get_clocks sys_clk]
+set_property src_info {type:XDC file:1 line:15 export:INPUT save:INPUT read:READ} [current_design]
+set_clock_uncertainty -hold 0.100 [get_clocks sys_clk]
